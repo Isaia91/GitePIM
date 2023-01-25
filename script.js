@@ -1,2 +1,6 @@
-const PaddleHeureDeDebut = document.getElementById('paddleHeureDeDebut').value
-console.log("Heure de début", PaddleHeureDeDebut)
+const paddleDateInput = document.querySelector("#paddleDateReservation");
+
+paddleDateInput.addEventListener("input", event => {
+    const date = new Date(event.target.value);
+    console.log(date)
+});
