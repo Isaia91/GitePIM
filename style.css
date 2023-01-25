@@ -1,13 +1,25 @@
-img{
+.logo {
+  height: 175px;
+  width: 150px;
+}
+
+/* ACTIVITÉS */
+img {
   width: 100%;
   height: 100%;
 }
-
-.logo{
-  height: 250px;
-  width: 250px;
+.paddle {
+  width: 400px;
+  height: 275px;
+  margin-bottom: 15px;
 }
-
-.footer{
-  background-color: #74ca43;
+.velo {
+  width: 400px;
+  height: 275px;
+  margin-bottom: 15px;
+}
+.plonge {
+  width: 400px;
+  height: 275px;
+  margin-bottom: 15px;
 }
