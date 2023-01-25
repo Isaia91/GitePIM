@@ -11,7 +11,8 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
-    <link href="./style.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet" />
+    <script src="script.js"></script>
   </head>
   <body>
     <div class="row">
@@ -52,13 +53,13 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Restaurant</a>
+                  <a class="nav-link" href="#table">Restaurant</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Activités</a>
+                  <a class="nav-link" href="#act">Activités</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contacts</a>
+                  <a class="nav-link" href="#contact">Contacts</a>
                 </li>
               </ul>
               <!-- Left links -->
@@ -79,7 +80,7 @@
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img
-                src="./assets/paysage2.jpg"
+                src="./assets/paysage.jpg"
                 class="d-block w-100"
                 alt="Paysage paradisiaque"
               />
@@ -121,139 +122,140 @@
       </div>
     </div>
 
-
     <div class="jj">
-    <div class="container">
-      
-      <div class="row">
-        <div class="col-md-12 text-center pt-5 pb-5">
-          <h3>La table de de PIM</h3>
-          <p class="mt-4">
-            Le gite de PIM vous accueille a sa table que vous soyez camping,
-            bungalow ou meme de passage dans la région. Une cuisine typiquement
-            calédonienne et francaise. Les repas seront réalisés avec des
-            produits locaux et de saison
-          </p>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center pt-5 pb-5">
+            <h3 id="table">La table de PIM</h3>
+            <p class="mt-4">
+              Le gite de PIM vous accueille a sa table que vous soyez camping,
+              bungalow ou meme de passage dans la région. Une cuisine
+              typiquement calédonienne et francaise. Les repas seront réalisés
+              avec des produits locaux et de saison
+            </p>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-4 mt-4 mb-5">
+            <img
+              class="rounded"
+              src="./assets/repascaledonien1.jpg"
+              style="width: 100%"
+              alt=""
+            />
+          </div>
+          <div class="col-md-4 mt-4 mb-5">
+            <img
+              class="rounded"
+              src="./assets/repascaledonien2.png"
+              style="width: 100%; height: 100%"
+              alt=""
+            />
+          </div>
+          <div class="col-md-4 mt-4 mb-5">
+            <img
+              class="rounded"
+              src="./assets/repascaledonien3.png"
+              style="width: 100%; height: 100%"
+              alt=""
+            />
+          </div>
         </div>
       </div>
-      <div class="row text-center">
-        <div class="col-md-4 mt-4 mb-5">
-          <img
-            class="rounded"
-            src="./assets/repascaledonien1.jpg"
-            style="width: 100%"
-            alt=""
-          />
-        </div>
-        <div class="col-md-4 mt-4 mb-5">
-          <img
-            class="rounded"
-            src="./assets/repascaledonien2.png"
-            style="width: 100%; height: 100%"
-            alt=""
-          />
-        </div>
-        <div class="col-md-4 mt-4 mb-5">
-          <img
-            class="rounded"
-            src="./assets/repascaledonien3.png"
-            style="width: 100%; height: 100%"
-            alt=""
-          />
-        </div>
-      </div>
-    </div>
     </div>
 
     <div class="jj1">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 text-center pt-5 pb-5">
-          <h3 class="">ACTIVITÉS</h3>
-          <p class="mt-4">
-            Durant votre séjour vous pourrez-pratiquer différentes activitées, autant sur terre que dans l'eau.
-          </p>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center pt-5 pb-5">
+            <h3 id="act">ACTIVITÉS</h3>
+            <p class="mt-4">
+              Durant votre séjour vous pourrez pratiquer différentes activitées,
+              autant sur terre que dans l'eau.
+            </p>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-4 mt-4 mb-4">
+            <h3 class="textcolor arvoregular mt-3">Balade en Paddle</h3>
+            <img
+              class="rounded"
+              src="./assets/test.jpg"
+              style="width: 100%"
+              alt=""
+            />
+            <p class="mt-4">
+              Une balade en paddle vous permettra de découvrir la nature de
+              manière paisible et de vous déconnecter de la vie quotidienne.
+              Naviguez vers la détente, découvrez la nature.
+            </p>
+            <button class="btn btn-involved">Réserver mon Paddle</button>
+          </div>
+          <div class="col-md-4 mt-4 mb-4">
+            <h3 class="textcolor arvoregular mt-3">Balade en vélo</h3>
+            <img
+              class="rounded"
+              src="./assets/test1.jpg"
+              style="width: 100%"
+              alt=""
+            />
+            <p class="mt-4">
+              Faire une balade à vélo est un excellent moyen de découvrir de
+              nouveaux endroits tout en s'amusant. Roulez vers l'aventure,
+              respirez la liberté.
+            </p>
+            <button class="btn btn-involved">Réserver mon vélo</button>
+          </div>
+          <div class="col-md-4 mt-4 mb-4">
+            <h3 class="textcolor arvoregular mt-3">Sortie en plongée</h3>
+            <img
+              class="rounded"
+              src="./assets/test2.jpg"
+              style="width: 100%"
+              alt=""
+            />
+            <p class="mt-4">
+              La plongée aquatique vous offre l'opportunité de découvrir un
+              monde sous-marin incroyablement coloré et riche en vie. Plongez
+              dans l'inconnu, découvrez un monde sous-marin époustouflant.
+            </p>
+            <button class="btn btn-involved">Réserver ma sortie</button>
+          </div>
         </div>
       </div>
-      <div class="row text-center">
-        <div class="col-md-4 mt-4 mb-4">
-          <h3 class="textcolor arvoregular mt-3">Balade en Paddle</h3>
-          <img
-            class="rounded"
-            src="./assets/test.jpg"
-            style="width: 100%"
-            alt=""
-          />
-          <p class="mt-4">
-            Une balade en paddle vous permettra de découvrir la nature de
-            manière paisible et de vous déconnecter de la vie quotidienne.
-            Naviguez vers la détente, découvrez la nature.
-          </p>
-          <button class="btn btn-involved">Réserver mon Paddle</button>
-        </div>
-        <div class="col-md-4 mt-4 mb-4">
-          <h3 class="textcolor arvoregular mt-3">Balade en vélo</h3>
-          <img
-            class="rounded"
-            src="./assets/test1.jpg"
-            style="width: 100%"
-            alt=""
-          />
-          <p class="mt-4">
-            Une balade en paddle vous permettra de découvrir la nature de
-            manière paisible et de vous déconnecter de la vie quotidienne.
-            Naviguez vers la détente, découvrez la nature.
-          </p>
-          <button class="btn btn-involved">Réserver mon Paddle</button>
-        </div>
-        <div class="col-md-4 mt-4 mb-4">
-          <h3 class="textcolor arvoregular mt-3">Sortie en plongée</h3>
-          <img
-            class="rounded"
-            src="./assets/test2.jpg"
-            style="width: 100%"
-            alt=""
-          />
-          <p class="mt-4">
-            Une balade en paddle vous permettra de découvrir la nature de
-            manière paisible et de vous déconnecter de la vie quotidienne.
-            Naviguez vers la détente, découvrez la nature.
-          </p>
-          <button class="btn btn-involved">Réserver mon Paddle</button>
-        </div>
-      </div>
-    </div></div>
+    </div>
 
-    <div class="bg-success">
-    <div class="container rounded">
-      
-      <div class="row">
-        <div class="col-md-4">
-          <ul class="list-unstyled mt-5">
-            <li class="mb-2">15 Rue de Verdun,</li>
-            <li class="mb-2">Nouméa 98800,</li>
-            <li class="mb-2">Nouvelle-Calédonie</li>
-            <li class="mb-2">Téléphone: +687 24.31.00</li>
-            <li class="mb-2">gestion.gitedupim@gmail.com</li>
-          </ul>
-        </div>
-        <div class="col-md-4 mt-4">
-          <img
-            class="rounded mx-auto d-block logo"
-            src="./assets/gitePim-removebg-preview.png"
-            alt=""
-          />
-        </div>
-        <div class="col-md-4 d-flex justify-content-end align-items-start">
-          <ul class="list-unstyled mt-5">
-            <li class="mb-2">Accueil</li>
-            <li class="mb-2">Restaurant</li>
-            <li class="mb-2">Activité</li>
-            <li class="mb-2">Contact</li>
-          </ul>
+    <div class="bg-success" id="contact">
+      <div class="container rounded">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled mt-5">
+              <li class="mb-2">15 Rue de Verdun,</li>
+              <li class="mb-2">Nouméa 98800,</li>
+              <li class="mb-2">Nouvelle-Calédonie</li>
+              <li class="mb-2">Téléphone: +687 24.31.00</li>
+              <li class="mb-2">contact@gitedepim</li>
+            </ul>
+          </div>
+          <div class="col-md-4 mt-4">
+            <img
+              class="rounded mx-auto d-block logo"
+              src="./assets/gitePim-removebg-preview.png"
+              alt=""
+            />
+          </div>
+          <div class="col-md-4 d-flex justify-content-end align-items-start">
+            <ul class="list-unstyled mt-5">
+              <li class="mb-2">Accueil</li>
+              <li class="mb-2">Chambres</li>
+              <li class="mb-2">Activités</li>
+              <li class="mb-2">Contacts</li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div></div>
+    </div>
+    <!-- back to top -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
       integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
