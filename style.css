@@ -1,4 +1,25 @@
-.logo{
-  height: auto;
-  width: auto;
+.logo {
+  height: 175px;
+  width: 150px;
+}
+
+/* ACTIVITÉS */
+img {
+  width: 100%;
+  height: 100%;
+}
+.paddle {
+  width: 400px;
+  height: 275px;
+  margin-bottom: 15px;
+}
+.velo {
+  width: 400px;
+  height: 275px;
+  margin-bottom: 15px;
+}
+.plonge {
+  width: 400px;
+  height: 275px;
+  margin-bottom: 15px;
 }
