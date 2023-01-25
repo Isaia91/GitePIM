@@ -3,23 +3,11 @@
   width: 150px;
 }
 
-/* ACTIVITÉS */
-img {
-  width: 100%;
-  height: 100%;
+.jj{
+  background-color: #FCCA46;
 }
-.paddle {
-  width: 400px;
-  height: 275px;
-  margin-bottom: 15px;
-}
-.velo {
-  width: 400px;
-  height: 275px;
-  margin-bottom: 15px;
-}
-.plonge {
-  width: 400px;
-  height: 275px;
-  margin-bottom: 15px;
+
+.jj1{
+  background-color: #FE7F2D;
+  color: white;
 }
