@@ -1,3 +1,7 @@
+//reset fields
+function resetfields(a){
+  document.getElementById("a").reset();
+}
 //Reservation activité
 
 function addKanoeReservation() {
@@ -6,6 +10,7 @@ function addKanoeReservation() {
   const object = "activityreservation";
   const action = "create";
   var xhttp = new XMLHttpRequest();
+
   xhttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 201) {
       var x = this.responseText;
@@ -18,7 +23,7 @@ function addKanoeReservation() {
     true
   );
   xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-
+  
   xhttp.send(
     "token=" +
       token +
@@ -44,6 +49,10 @@ function addKanoeReservation() {
       "activite=" +
       document.querySelector("#kanoe").value
   );
+  resetfields(kanoeDateReservation);
+  resetfields(kanoeHeureDeDebut);
+  resetfields(kanoeHeureDeFin);
+  
 }
 
 function addRandonneeReservation() {
