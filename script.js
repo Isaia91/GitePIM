@@ -177,7 +177,7 @@ function getroom() {
 }
 
 function getbungalow() {
-  console.log("button test");
+  console.log("button getbungalow");
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
@@ -197,24 +197,22 @@ function getbungalow() {
           "</td>" +
           "<td>" +
           element.landscape +
-          "</td>"; //recupere l'id par ligne avec le element.id que l'on passe en parametre de fonctions pour les suppressions
+          "</td>" +
+          '<td><button type="button"  class="btn btn-primary" data-toggle="modal" data-target="#test" onclick="loaddata(' +
+          element.id +
+          ');"><i class="fas fa-pencil"></i></button></td>'; //recupere l'id par ligne avec le element.id que l'on passe en parametre de fonctions pour les suppressions
         info.innerHTML += "</tr>";
       });
     } else {
       //document.getElementById("adress-output").innerHTML="error";
       //console.log("dans le else de la fonction lance");
     }
-    xhttp.open(
-      "GET",
-      "https://tst.quantiq.nc/devweb-cfa/api/index.php?service=gite&object=room&action=list&type=chambre",
-      true
-    );
   };
+  xhttp.open(
+    "GET",
+    "https://tst.quantiq.nc/devweb-cfa/api/index.php?service=gite&object=room&action=list&type=bungalow",
+    true
+  ); // add id at the end of url to  located the good item
+  xhttp.send();
 }
 
-xhttp.open(
-  "GET",
-  "https://tst.quantiq.nc/devweb-cfa/api/index.php?service=gite&object=room&action=list&type=bungalow",
-  true
-); // add id at the end of url to  located the good item
-xhttp.send();
