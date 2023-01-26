@@ -1,3 +1,5 @@
+//Reservation activité
+
 function addKanoeReservation() {
   const token = "D@lL@5Mùl!P@5S3";
   const service = "gite";
@@ -41,6 +43,98 @@ function addKanoeReservation() {
       "&" +
       "activite=" +
       document.querySelector("#kanoe").value
+  );
+}
+
+function addRandonneeReservation() {
+  const token = "D@lL@5Mùl!P@5S3";
+  const service = "gite";
+  const object = "activityreservation";
+  const action = "create";
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function () {
+    if (this.readyState == 4 && this.status == 201) {
+      var x = this.responseText;
+      var xparsed = JSON.parse(x);
+    }
+  };
+  xhttp.open(
+    "POST",
+    "https://tst.quantiq.nc/devweb-cfa/api/index.php?service=gite&object=activityreservation&action=create",
+    true
+  );
+  xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+  xhttp.send(
+    "token=" +
+      token +
+      "&" +
+      "service=" +
+      service +
+      "&" +
+      "object=" +
+      object +
+      "&" +
+      "action=" +
+      action +
+      "&" +
+      "date=" +
+      document.querySelector("#randonneeDateReservation").value +
+      "&" +
+      "heureDebut=" +
+      document.querySelector("#randonneeHeureDeDebut").value +
+      "&" +
+      "heureFin=" +
+      document.querySelector("#randonneeHeureDeFin").value +
+      "&" +
+      "activite=" +
+      document.querySelector("#randonnee").value
+  );
+}
+
+function addPlongeeReservation() {
+  const token = "D@lL@5Mùl!P@5S3";
+  const service = "gite";
+  const object = "activityreservation";
+  const action = "create";
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function () {
+    if (this.readyState == 4 && this.status == 201) {
+      var x = this.responseText;
+      var xparsed = JSON.parse(x);
+    }
+  };
+  xhttp.open(
+    "POST",
+    "https://tst.quantiq.nc/devweb-cfa/api/index.php?service=gite&object=activityreservation&action=create",
+    true
+  );
+  xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+  xhttp.send(
+    "token=" +
+      token +
+      "&" +
+      "service=" +
+      service +
+      "&" +
+      "object=" +
+      object +
+      "&" +
+      "action=" +
+      action +
+      "&" +
+      "date=" +
+      document.querySelector("#plongeeDateReservation").value +
+      "&" +
+      "heureDebut=" +
+      document.querySelector("#plongeeHeureDeDebut").value +
+      "&" +
+      "heureFin=" +
+      document.querySelector("#plongeeHeureDeFin").value +
+      "&" +
+      "activite=" +
+      document.querySelector("#plongee").value
   );
 }
 
@@ -135,6 +229,99 @@ function addDejeunerReservation() {
       document.querySelector("#dejeuner").value
   );
 }
+
+//Reservation chambre
+function addBungalowReservation() {
+  const token = "D@lL@5Mùl!P@5S3";
+  const service = "gite";
+  const object = "roomreservation";
+  const action = "create";
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function () {
+    if (this.readyState == 4 && this.status == 201) {
+      var x = this.responseText;
+      var xparsed = JSON.parse(x);
+    }
+  };
+  xhttp.open(
+    "POST",
+    "https://tst.quantiq.nc/devweb-cfa/api/index.php?service=gite&object=roomreservation&action=create",
+    true
+  );
+  xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+  xhttp.send(
+    "token=" +
+      token +
+      "&" +
+      "service=" +
+      service +
+      "&" +
+      "object=" +
+      object +
+      "&" +
+      "idRoom="+
+      document.querySelector("#number").value +
+      "&" +
+      "action=" +
+      action +
+      "&" +
+      "dateEntree=" +
+      document.querySelector("#DateDentreeReservation").value +
+      "&" +
+      "dateSortie=" +
+      document.querySelector("#DateDeSortieReservation").value
+  );
+}
+
+function addChambreReservation() {
+  const token = "D@lL@5Mùl!P@5S3";
+  const service = "gite";
+  const object = "roomreservation";
+  const action = "create";
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function () {
+    if (this.readyState == 4 && this.status == 201) {
+      var x = this.responseText;
+      var xparsed = JSON.parse(x);
+    }
+  };
+  xhttp.open(
+    "POST",
+    "https://tst.quantiq.nc/devweb-cfa/api/index.php?service=gite&object=roomreservation&action=create",
+    true
+  );
+  xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+  xhttp.send(
+    "token=" +
+      token +
+      "&" +
+      "service=" +
+      service +
+      "&" +
+      "object=" +
+      object +
+      "&" +
+      "idRoom="+
+      document.querySelector("#numberChambre").value +
+      "&" +
+      "action=" +
+      action +
+      "&" +
+      "dateEntree=" +
+      document.querySelector("#DateDentreeChambreReservation").value +
+      "&" +
+      "dateSortie=" +
+      document.querySelector("#DateDeSortieChambreReservation").value
+  );
+}
+
+
+
+
+
+
 
 function getroom() {
   console.log("button test");

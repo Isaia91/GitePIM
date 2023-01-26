@@ -140,12 +140,13 @@
         </div>
       </div>
     </div>
+
     <!-- TABLE--TABLE--TABLE--TABLE--TABLE--TABLE--TABLE--TABLE--TABLE--TABLE--TABLE---TABLE--TABLE -->
-    <div class="jj">
+    <div class="jj1">
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center pt-5 pb-5">
-            <h3 id="table">La table de PIM</h3>
+            <h3 id="act">Les tables de Pim</h3>
             <p class="mt-4">
               Le Gîte de PIM vous accueille à sa table que vous soyez en
               camping, bungalow ou meme de passage dans la région. Une cuisine
@@ -155,33 +156,153 @@
           </div>
         </div>
         <div class="row text-center">
-          <div class="col-md-4 mt-4 mb-5">
+          <div class="col-md-4 mt-4 mb-4">
+            <h3 class="textcolor arvoregular mt-3">Balade en Kanoé</h3>
             <img
               class="rounded"
               src="./assets/repascaledonien1.jpg"
               style="width: 100%"
               alt=""
             />
+            <p class="mt-4">
+              Une balade en kanoé vous permettra de découvrir la nature de
+              manière paisible et de vous déconnecter de la vie quotidienne.
+              Naviguez vers la détente, découvrez la nature.
+            </p>
+            <button class="btn btn-involved" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDiner" aria-expanded="false" aria-controls="collapseDiner">Réserver mon dîner</button>
+            <div class="collapse" id="collapseDiner">
+              <div class="card card-body bg-success">
+                <div class="container">
+                  <form>
+                    <div class="mb-3">
+                      <label class="form-label">Activité:</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="diner"
+                        value="Dîner"
+                        aria-describedby="dinerReservation"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Date:</label>
+                      <input
+                        type="date"
+                        class="form-control"
+                        id="dinerDateReservation"
+                        aria-describedby="dinerDateReservation"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Heure de début:</label>
+                      <input
+                        type="time"
+                        step="1"
+                        class="form-control"
+                        id="dinerHeureDeDebut"
+                        aria-describedby="dinerReservation"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Heure de fin:</label>
+                      <input
+                        type="time"
+                        step="1"
+                        class="form-control"
+                        id="dinerHeureDeFin"
+                        aria-describedby="dinerReservation"
+                      />
+                    </div>
+                    <button type="button" onclick="addDinerReservation()" class="btn btn-primary">
+                      Réserver
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-md-4 mt-4 mb-5">
+          <div class="col-md-4 mt-4 mb-4">
+            <h3 class="textcolor arvoregular mt-3">Balade en vélo</h3>
             <img
               class="rounded"
               src="./assets/repascaledonien2.png"
-              style="width: 100%; height: 100%"
+              style="width: 100%"
               alt=""
             />
+            <p class="mt-4">
+              Une balade en paddle vous permettra de découvrir la nature de
+              manière paisible et de vous déconnecter de la vie quotidienne.
+              Naviguez vers la détente, découvrez la nature.
+            </p>
           </div>
-          <div class="col-md-4 mt-4 mb-5">
+          <div class="col-md-4 mt-4 mb-4">
+            <h3 class="textcolor arvoregular mt-3">Sortie en plongée</h3>
             <img
               class="rounded"
               src="./assets/repascaledonien3.png"
-              style="width: 100%; height: 100%"
+              style="width: 100%"
               alt=""
             />
+            <p class="mt-4">
+              Une balade en paddle vous permettra de découvrir la nature de
+              manière paisible et de vous déconnecter de la vie quotidienne.
+              Naviguez vers la détente, découvrez la nature.
+            </p>
+            <button class="btn btn-involved" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDéjeuner" aria-expanded="false" aria-controls="collapseDéjeuner">Réserver mon déjeuner</button>
+            <div class="collapse" id="collapseDéjeuner">
+              <div class="card card-body bg-success">
+                <div class="container">
+                  <form>
+                    <div class="mb-3">
+                      <label class="form-label">Activité:</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="dejeuner"
+                        value="Déjeuner"
+                        aria-describedby="dejeunerReservation"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Date:</label>
+                      <input
+                        type="date"
+                        class="form-control"
+                        id="dejeunerDateReservation"
+                        aria-describedby="dejeunerDateReservation"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Heure de début:</label>
+                      <input
+                        type="time"
+                        step="1"
+                        class="form-control"
+                        id="dejeunerHeureDeDebut"
+                        aria-describedby="dejeunerReservation"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Heure de fin:</label>
+                      <input
+                        type="time"
+                        step="1"
+                        class="form-control"
+                        id="dejeunerHeureDeFin"
+                        aria-describedby="dejeunerReservation"
+                      />
+                    </div>
+                    <button type="button" onclick="addDejeunerReservation()" class="btn btn-primary">
+                      Réserver
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+        </div>
       </div>
-    </div>
 
     <!-- -ACTIVITE----ACTIVITE---ACTIVITE-----ACTIVITE------ACTIVITE----ACTIVITE-----ACTIVITE--ACTIVITE -->
 
@@ -251,7 +372,7 @@
                         step="1"
                         class="form-control"
                         id="kanoeHeureDeDebut"
-                        aria-describedby="paddleReservation"
+                        aria-describedby="kanoeReservation"
                       />
                     </div>
                     <div class="mb-3">
@@ -285,8 +406,8 @@
               manière paisible et de vous déconnecter de la vie quotidienne.
               Naviguez vers la détente, découvrez la nature.
             </p>
-            <button class="btn btn-involved" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDiner" aria-expanded="false" aria-controls="collapseDiner">Réserver mon vélo</button>
-            <div class="collapse" id="collapseDiner">
+            <button class="btn btn-involved" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRandonnée" aria-expanded="false" aria-controls="collapseRandonnée">Réserver mon vélo</button>
+            <div class="collapse" id="collapseRandonnée">
               <div class="card card-body bg-success">
                 <div class="container">
                   <form>
@@ -295,9 +416,9 @@
                       <input
                         type="text"
                         class="form-control"
-                        id="diner"
-                        value="Dîner"
-                        aria-describedby="dinerReservation"
+                        id="randonnee"
+                        value="Randonnée"
+                        aria-describedby="randonneeReservation"
                       />
                     </div>
                     <div class="mb-3">
@@ -305,8 +426,8 @@
                       <input
                         type="date"
                         class="form-control"
-                        id="dinerDateReservation"
-                        aria-describedby="dinerDateReservation"
+                        id="randonneeDateReservation"
+                        aria-describedby="randonneeDateReservation"
                       />
                     </div>
                     <div class="mb-3">
@@ -315,8 +436,8 @@
                         type="time"
                         step="1"
                         class="form-control"
-                        id="dinerHeureDeDebut"
-                        aria-describedby="dinerReservation"
+                        id="randonneeHeureDeDebut"
+                        aria-describedby="randonneeHeuredeDebutReservation"
                       />
                     </div>
                     <div class="mb-3">
@@ -325,11 +446,11 @@
                         type="time"
                         step="1"
                         class="form-control"
-                        id="dinerHeureDeFin"
-                        aria-describedby="dinerReservation"
+                        id="randonneeHeureDeFin"
+                        aria-describedby="randonneeReservation"
                       />
                     </div>
-                    <button type="button" onclick="addDinerReservation()" class="btn btn-primary">
+                    <button type="button" onclick="addRandonneeReservation()" class="btn btn-primary">
                       Réserver
                     </button>
                   </form>
@@ -360,8 +481,8 @@
                       <input
                         type="text"
                         class="form-control"
-                        id="dejeuner"
-                        value="Déjeuner"
+                        id="plongee"
+                        value="Plongée"
                         aria-describedby="dejeunerReservation"
                       />
                     </div>
@@ -370,7 +491,7 @@
                       <input
                         type="date"
                         class="form-control"
-                        id="dejeunerDateReservation"
+                        id="plongeeDateReservation"
                         aria-describedby="dejeunerDateReservation"
                       />
                     </div>
@@ -380,7 +501,7 @@
                         type="time"
                         step="1"
                         class="form-control"
-                        id="dejeunerHeureDeDebut"
+                        id="plongeeHeureDeDebut"
                         aria-describedby="dejeunerReservation"
                       />
                     </div>
@@ -390,11 +511,11 @@
                         type="time"
                         step="1"
                         class="form-control"
-                        id="dejeunerHeureDeFin"
+                        id="plongeeHeureDeFin"
                         aria-describedby="dejeunerReservation"
                       />
                     </div>
-                    <button type="button" onclick="addDejeunerReservation()" class="btn btn-primary">
+                    <button type="button" onclick="addPlongeeReservation()" class="btn btn-primary">
                       Réserver
                     </button>
                   </form>
@@ -421,6 +542,9 @@
             </p>
           </div>
         </div>
+
+        <!-- ---------- -->
+
         <div class="row text-center">
           <div class="col-md-6 mt-4 mb-4">
             <h3 class="textcolor arvoregular mt-3">Bungalow</h3>
@@ -428,8 +552,8 @@
               <p class="mt-4">Dormir dans un bungalow, c'est s'offrir une expérience de vacances
                 authentique et proche de la nature.
               </p>
-            <button class="btn btn-involved" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePlongée" aria-expanded="false" aria-controls="collapsePlongée"> Réserver mon bungalow</button>
-            <div class="collapse" id="collapsePlongée">
+            <button class="btn btn-involved" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBungalow" aria-expanded="false" aria-controls="collapseBungalow"> Réserver mon bungalow</button>
+            <div class="collapse" id="collapseBungalow">
               <div class="card card-body">
                 <form>
                   <div class="mb-3">
@@ -505,8 +629,9 @@
 </div>
 
 
-    <!-- ------------------------------------- -->
 
+</div>
+</div>
     <div class="">
       <div class="container rounded">
         <div class="row">
