@@ -4,13 +4,19 @@
 }
 
 .jj {
-  background-color: #fcca46;
+  background-color: #98c894;
 }
 
 .jj1 {
-  background-color: #fe7f2d;
+  background-color: #f8f8f8;
   color: white;
 }
 .jj2 {
-  background-color: #fcca46;
+  background-color: #98c894;
+}
+p {
+  color: black;
+}
+h3 {
+  color: black;
 }
