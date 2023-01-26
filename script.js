@@ -243,7 +243,10 @@ function getResaActivite(){
           "</td>" +
           "<td>" +
           element.heureFin +
-          "</td>"; //recupere l'id par ligne avec le element.id que l'on passe en parametre de fonctions pour les suppressions
+          "</td>"+
+          '<td><button type="button"  class="btn btn-danger" onclick="deleteitem(' +
+          element.id +
+          ')" data-toggle="modal" data-target="#myModaltodelete" title="Delete"><i class="fas fa-trash fa-inverse"></i></button></td>'; //recupere l'id par ligne avec le element.id que l'on passe en parametre de fonctions pour les suppressions
         info.innerHTML += "</tr>";
       });
     } else {
@@ -281,5 +284,29 @@ function getActivite(){
  }
 
  function loaddata (id){
-  console.log(id)
+  console.log
  }
+ function deleteitem(id) {
+  console.log("welcome in function deleteitem for the id :" + id);
+  var result = confirm("Vous allez supprimer l'élément "+ id +" ?");
+  if (result == true) {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function () {
+      if (this.readyState == 4 && this.status == 200) {
+        var x = this.responseText;
+        var xparsed = JSON.parse(x);
+        console.log("func to supp")
+        //console.log(xparsed);
+      } else {
+      }
+    };
+    xhttp.open("DELETE",
+    "https://6057e432c3f49200173ad08d.mockapi.io/employees/" + id,
+    true
+  );
+    xhttp.send(JSON.stringify({ id: id }));
+    console.log("success for the function delete item," + id + " is deleted");
+    //console.log(id);
+  } else {
+  }
+}
