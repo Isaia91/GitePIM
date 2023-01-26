@@ -216,3 +216,67 @@ function getbungalow() {
   xhttp.send();
 }
 
+function getResaActivite(){
+ console.log('button getresaactivite')
+ var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function () {
+    if (this.readyState == 4 && this.status == 200) {
+      var x = this.responseText;
+      var xparsed = JSON.parse(x);
+      console.log(xparsed);
+      const info = document.getElementById("TableResaActivite");
+      xparsed.forEach((element) => {
+        info.innerHTML +=
+        "<tr>" +
+          //info.innerHTML +=
+          "<td>" +
+          element.id +
+          "</td>" +
+          "<td>" +
+          element.activite +
+          "</td>" +
+          "<td>" +
+          element.date +
+          "</td>" +
+          "<td>" +
+          element.heureDebut +
+          "</td>" +
+          "<td>" +
+          element.heureFin +
+          "</td>"; //recupere l'id par ligne avec le element.id que l'on passe en parametre de fonctions pour les suppressions
+        info.innerHTML += "</tr>";
+      });
+    } else {
+      //document.getElementById("adress-output").innerHTML="error";
+      //console.log("dans le else de la fonction lance");
+    }
+  };
+  xhttp.open(
+    "GET",
+    "https://tst.quantiq.nc/devweb-cfa/api/index.php?service=gite&object=activityreservation&action=list",
+    true
+  ); // add id at the end of url to  located the good item
+  xhttp.send();
+}
+
+function getActivite(){
+  console.log('button getresaactivite')
+  var xhttp = new XMLHttpRequest();
+   xhttp.onreadystatechange = function () {
+     if (this.readyState == 4 && this.status == 200) {
+       var x = this.responseText;
+       var xparsed = JSON.parse(x);
+       console.log(xparsed);
+     } else {
+       //document.getElementById("adress-output").innerHTML="error";
+       //console.log("dans le else de la fonction lance");
+     }
+   };
+   xhttp.open(
+     "GET",
+     "https://tst.quantiq.nc/devweb-cfa/api/index.php?service=gite&object=activity&action=list",
+     true
+   ); // add id at the end of url to  located the good item
+   xhttp.send();
+ }
+ 
