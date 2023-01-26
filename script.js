@@ -212,11 +212,9 @@ function getbungalow() {
   };
 }
 
-  };
-  xhttp.open(
-    "GET",
-    "https://tst.quantiq.nc/devweb-cfa/api/index.php?service=gite&object=room&action=list&type=bungalow",
-    true
-  );// add id at the end of url to  located the good item
-  xhttp.send();
-}
+xhttp.open(
+  "GET",
+  "https://tst.quantiq.nc/devweb-cfa/api/index.php?service=gite&object=room&action=list&type=bungalow",
+  true
+); // add id at the end of url to  located the good item
+xhttp.send();
