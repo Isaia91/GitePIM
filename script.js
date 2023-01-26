@@ -279,4 +279,7 @@ function getActivite(){
    ); // add id at the end of url to  located the good item
    xhttp.send();
  }
- 
+
+ function loaddata (id){
+  console.log(id)
+ }
