@@ -323,41 +323,150 @@ function addChambreReservation() {
 
 
 
-function getbungalow (){
-  console.log("button test")
+function getroom() {
+  console.log("button test");
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
       var x = this.responseText;
       var xparsed = JSON.parse(x);
-      console.log(xparsed)
-      const info = document.getElementById("bungalowmodal");
-    xparsed.forEach((element) => {
-      info.innerHTML += "<tr>"    
-  });
-    }
-  xhttp.open(
-    "GET",
-    "https://tst.quantiq.nc/devweb-cfa/api/index.php?service=gite&object=room&action=list&type=bungalow",
-    true    );// add id at the end of url to  located the good item    xhttp.send();
-}}
-
-function getroom (){
-  console.log("button test")
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function () {
-    if (this.readyState == 4 && this.status == 200) {
-      var x = this.responseText;
-      var xparsed = JSON.parse(x);
-      console.log(xparsed)
+      console.log(xparsed);
       const info = document.getElementById("roommodal");
-    xparsed.forEach((element) => {
-      info.innerHTML +=          "<tr>"
-  });
+      xparsed.forEach((element) => {
+        info.innerHTML +=
+          "<tr>" +
+          //info.innerHTML +=
+          "<td>" +
+          element.id +
+          "</td>" +
+          "<td>" +
+          element.type +
+          "</td>" +
+          "<td>" +
+          element.landscape +
+          "</td>" +
+          '<td><button type="button"  class="btn btn-primary" data-toggle="modal" data-target="#test" onclick="loaddata(' +
+          element.id +
+          ');"><i class="fas fa-pencil"></i></button></td>'; //recupere l'id par ligne avec le element.id que l'on passe en parametre de fonctions pour les suppressions
+        info.innerHTML += "</tr>";
+      });
+    } else {
+      //document.getElementById("adress-output").innerHTML="error";
+      //console.log("dans le else de la fonction lance");
     }
+  };
   xhttp.open(
     "GET",
     "https://tst.quantiq.nc/devweb-cfa/api/index.php?service=gite&object=room&action=list&type=chambre",
-    true    );
+    true
+  ); // add id at the end of url to  located the good item
+  xhttp.send();
 }
+
+function getbungalow() {
+  console.log("button getbungalow");
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function () {
+    if (this.readyState == 4 && this.status == 200) {
+      var x = this.responseText;
+      var xparsed = JSON.parse(x);
+      console.log(xparsed);
+      const info = document.getElementById("bungalowmodal");
+      xparsed.forEach((element) => {
+        info.innerHTML +=
+          "<tr>" +
+          //info.innerHTML +=
+          "<td>" +
+          element.id +
+          "</td>" +
+          "<td>" +
+          element.type +
+          "</td>" +
+          "<td>" +
+          element.landscape +
+          "</td>" +
+          '<td><button type="button"  class="btn btn-primary" data-toggle="modal" data-target="#test" onclick="loaddata(' +
+          element.id +
+          ');"><i class="fas fa-pencil"></i></button></td>'; //recupere l'id par ligne avec le element.id que l'on passe en parametre de fonctions pour les suppressions
+        info.innerHTML += "</tr>";
+      });
+    } else {
+      //document.getElementById("adress-output").innerHTML="error";
+      //console.log("dans le else de la fonction lance");
+    }
+  };
+  xhttp.open(
+    "GET",
+    "https://tst.quantiq.nc/devweb-cfa/api/index.php?service=gite&object=room&action=list&type=bungalow",
+    true
+  ); // add id at the end of url to  located the good item
+  xhttp.send();
 }
+
+function getResaActivite(){
+ console.log('button getresaactivite')
+ var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function () {
+    if (this.readyState == 4 && this.status == 200) {
+      var x = this.responseText;
+      var xparsed = JSON.parse(x);
+      console.log(xparsed);
+      const info = document.getElementById("TableResaActivite");
+      xparsed.forEach((element) => {
+        info.innerHTML +=
+        "<tr>" +
+          //info.innerHTML +=
+          "<td>" +
+          element.id +
+          "</td>" +
+          "<td>" +
+          element.activite +
+          "</td>" +
+          "<td>" +
+          element.date +
+          "</td>" +
+          "<td>" +
+          element.heureDebut +
+          "</td>" +
+          "<td>" +
+          element.heureFin +
+          "</td>"; //recupere l'id par ligne avec le element.id que l'on passe en parametre de fonctions pour les suppressions
+        info.innerHTML += "</tr>";
+      });
+    } else {
+      //document.getElementById("adress-output").innerHTML="error";
+      //console.log("dans le else de la fonction lance");
+    }
+  };
+  xhttp.open(
+    "GET",
+    "https://tst.quantiq.nc/devweb-cfa/api/index.php?service=gite&object=activityreservation&action=list",
+    true
+  ); // add id at the end of url to  located the good item
+  xhttp.send();
+}
+
+function getActivite(){
+  console.log('button getresaactivite')
+  var xhttp = new XMLHttpRequest();
+   xhttp.onreadystatechange = function () {
+     if (this.readyState == 4 && this.status == 200) {
+       var x = this.responseText;
+       var xparsed = JSON.parse(x);
+       console.log(xparsed);
+     } else {
+       //document.getElementById("adress-output").innerHTML="error";
+       //console.log("dans le else de la fonction lance");
+     }
+   };
+   xhttp.open(
+     "GET",
+     "https://tst.quantiq.nc/devweb-cfa/api/index.php?service=gite&object=activity&action=list",
+     true
+   ); // add id at the end of url to  located the good item
+   xhttp.send();
+ }
+
+ function loaddata (id){
+  console.log(id)
+ }
