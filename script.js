@@ -261,16 +261,16 @@ function addBungalowReservation() {
       object +
       "&" +
       "idRoom="+
-      document.querySelector("#number").value +
+      document.querySelector("#numberBungalow").value +
       "&" +
       "action=" +
       action +
       "&" +
       "dateEntree=" +
-      document.querySelector("#DateDentreeReservation").value +
+      document.querySelector("#DateDentreeBungalowReservation").value +
       "&" +
       "dateSortie=" +
-      document.querySelector("#DateDeSortieReservation").value
+      document.querySelector("#DateDeSortieBungalowReservation").value
   );
 }
 

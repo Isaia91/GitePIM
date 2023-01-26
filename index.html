@@ -198,7 +198,7 @@
                         class="form-control"
                         id="dinerHeureDeDebut"
                         aria-describedby="dinerReservation"
-                      />
+                      >
                     </div>
                     <div class="mb-3">
                       <label class="form-label">Heure de fin:</label>
@@ -208,7 +208,7 @@
                         class="form-control"
                         id="dinerHeureDeFin"
                         aria-describedby="dinerReservation"
-                      />
+                      >
                     </div>
                     <button type="button" onclick="addDinerReservation()" class="btn btn-primary">
                       Réserver
@@ -224,7 +224,7 @@
               class="rounded"
               src="./assets/repascaledonien2.png"
               style="width: 100%"
-              alt=""
+              alt="Repas calédonien"
             />
             <p class="mt-4">
               Une balade en paddle vous permettra de découvrir la nature de
@@ -238,8 +238,8 @@
               class="rounded"
               src="./assets/repascaledonien3.png"
               style="width: 100%"
-              alt=""
-            />
+              alt="repas calédonien"
+            >
             <p class="mt-4">
               Une balade en paddle vous permettra de découvrir la nature de
               manière paisible et de vous déconnecter de la vie quotidienne.
@@ -552,23 +552,46 @@
             <button class="btn btn-involved" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBungalow" aria-expanded="false" aria-controls="collapseBungalow"> Réserver mon bungalow</button>
             <div class="collapse" id="collapseBungalow">
               <div class="card card-body">
-                <form>
-                  <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email </label>
-                    <input type="email" class="form-control" aria-describedby="emailHelp"/>
-                    <div class="form-text">We'll never share your email with anyone else.
-            </div>
-          </div>
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input type="password" class="form-control" />
-          </div>
-          <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" />
-            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+                <div class="container">
+                  <form>
+                    <div class="mb-3">
+                      <label class="form-label">Choix du bungalow:</label>
+                      <select
+                        type="text"
+                        class="form-control"
+                        id="numberBungalow"
+                        aria-describedby="numeroReservation"
+                      >
+                      <option value="Selectionner la chambre">Sélectionner la chambre</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                    </select>
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Date d'entrée:</label>
+                      <input
+                        type="date"
+                        class="form-control"
+                        id="DateDentreeBungalowReservation"
+                        aria-describedby="DateDentreeReservation"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Date de sortie:</label>
+                      <input
+                        type="date"
+                        class="form-control"
+                        id="DateDeSortieBungalowReservation"
+                        aria-describedby="DateDeSortieBungalowReservation"
+                      />
+                    </div>
+                    <button type="button" onclick="addBungalowReservation()" class="btn btn-primary">
+                      Réserver
+                    </button>
+                  </form>
+                </div>
       </div>
     </div><button type="button" onclick="getbungalow()" class="btn btn-primary">GET</button>
     <div>
@@ -590,22 +613,46 @@
     <button class="btn btn-involved" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePlongée" aria-expanded="false" aria-controls="collapsePlongée">Réserver ma chambre</button>
     <div class="collapse" id="collapsePlongée">
       <div class="card card-body">
-        <form>
-          <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Email address</label>
-            <input type="email" class="form-control" aria-describedby="emailHelp"/>
-            <div class="form-text">We'll never share your email with anyone else.
+        <div class="container">
+          <form>
+            <div class="mb-3">
+              <label class="form-label">Choix de la chambre:</label>
+              <select
+                type="text"
+                class="form-control"
+                id="numberChambre"
+                aria-describedby="numeroReservation"
+              >
+              <option value="Selectionner la chambre">Sélectionner la chambre</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="8">8</option>
+            </select>
             </div>
-          </div>
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input type="password" class="form-control"/>
-          </div>
-          <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" />
-            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button></form>
+            <div class="mb-3">
+              <label class="form-label">Date d'entrée:</label>
+              <input
+                type="date"
+                class="form-control"
+                id="DateDentreeChambreReservation"
+                aria-describedby="DateDentreeReservation"
+              />
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Date de sortie:</label>
+              <input
+                type="date"
+                class="form-control"
+                id="DateDeSortieChambreReservation"
+                aria-describedby="DateDeSortieChambreReservation"
+              />
+            </div>
+            <button type="button" onclick="addChambreReservation()" class="btn btn-primary">
+              Réserver
+            </button>
+          </form>
+        </div>
         </div>
       </div><button type="button" onclick="getroom()" class="btn btn-primary">GET</button>
       <div>
