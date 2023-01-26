@@ -167,6 +167,8 @@
       </div>
     </div>
 
+    <!-- ------------------------------ -->
+
     <div class="jj1">
       <div class="container">
         <div class="row">
@@ -192,7 +194,65 @@
               manière paisible et de vous déconnecter de la vie quotidienne.
               Naviguez vers la détente, découvrez la nature.
             </p>
-            <button class="btn btn-involved">Réserver mon Paddle</button>
+            <button
+              class="btn btn-involved"
+              class="btn btn-primary"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseExample"
+              aria-expanded="false"
+              aria-controls="collapseExample"
+            >
+              Réserver mon Paddle
+            </button>
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body bg-success">
+                <div class="container">
+                  <form>
+                    <div class="mb-3">
+                      <label class="form-label">Activité:</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="paddle"
+                        value="Paddle"
+                        aria-describedby="paddleReservation"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Activité:</label>
+                      <input
+                        type="date"
+                        class="form-control"
+                        id="paddleDateReservation"
+                        aria-describedby="paddleReservation"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Heure de début:</label>
+                      <input
+                        type="time"
+                        class="form-control"
+                        id="paddleHeureDeDebut"
+                        aria-describedby="paddleReservation"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Heure de fin:</label>
+                      <input
+                        type="time"
+                        class="form-control"
+                        id="paddleHeureDeFin"
+                        aria-describedby="paddleReservation"
+                      />
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                      Réserver
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="col-md-4 mt-4 mb-4">
             <h3 class="textcolor arvoregular mt-3">Balade en vélo</h3>
@@ -207,7 +267,49 @@
               nouveaux endroits tout en prenant soin de sa santé.Roulez vers
               l'aventure, respirez la liberté
             </p>
-            <button class="btn btn-involved">Réserver mon vélo</button>
+            <button
+              class="btn btn-involved"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseVelo"
+              aria-expanded="false"
+              aria-controls="collapseVelo"
+            >
+              Réserver mon vélo
+            </button>
+            <div class="collapse" id="collapseVelo">
+              <div class="card card-body">
+                <form>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label"
+                      >Email address</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id=""
+                      aria-describedby="emailHelp"
+                    />
+                    <div id="" class="form-text">
+                      We'll never share your email with anyone else.
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label"
+                      >Password</label
+                    >
+                    <input type="password" class="form-control" id="" />
+                  </div>
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="" />
+                    <label class="form-check-label" for="exampleCheck1"
+                      >Check me out</label
+                    >
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+              </div>
+            </div>
           </div>
           <div class="col-md-4 mt-4 mb-4">
             <h3 class="textcolor arvoregular mt-3">Sortie en plongée</h3>
@@ -222,12 +324,53 @@
               monde sous-marin incroyablement coloré et riche en vie.Plongez
               dans l'inconnu, découvrez un monde sous-marin époustouflant.
             </p>
-            <button class="btn btn-involved">Réserver ma sortie</button>
+            <button
+              class="btn btn-involved"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapsePlongée"
+              aria-expanded="false"
+              aria-controls="collapsePlongée"
+            >
+              Réserver mon activité
+            </button>
+            <div class="collapse" id="collapsePlongée">
+              <div class="card card-body">
+                <form>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label"
+                      >Email address</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      aria-describedby="emailHelp"
+                    />
+                    <div class="form-text">
+                      We'll never share your email with anyone else.
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label"
+                      >Password</label
+                    >
+                    <input type="password" class="form-control" />
+                  </div>
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" />
+                    <label class="form-check-label" for="exampleCheck1"
+                      >Check me out</label
+                    >
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-
+    <!-- ------------------------------------- -->
     <div class="jj2">
       <div class="container">
         <div class="row">
@@ -273,6 +416,8 @@
         </div>
       </div>
     </div>
+    <!-- ------------------------------------- -->
+
     <div class="bg-success">
       <div class="container rounded">
         <div class="row">

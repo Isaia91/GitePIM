@@ -1,1 +1,1 @@
-// Back to top button
+const paddleDateInput = document.querySelector("#paddleDateReservation");
