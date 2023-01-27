@@ -1,6 +1,6 @@
 //reset fields
-function resetfields(a){
-  document.getElementById("a").reset();
+function letspop(){
+  window.alert("Réservation passée")
 }
 //Reservation activité
 
@@ -49,9 +49,8 @@ function addKanoeReservation() {
       "activite=" +
       document.querySelector("#kanoe").value
   );
-  resetfields(kanoeDateReservation);
-  resetfields(kanoeHeureDeDebut);
-  resetfields(kanoeHeureDeFin);
+  
+ 
   
 }
 
@@ -394,7 +393,7 @@ function getbungalow() {
           "<td>" +
           element.landscape +
           "</td>" +
-          '<td><button type="button"  class="btn btn-primary" data-toggle="modal" data-target="#test" onclick="loaddata(' +
+          '<td><button type="button"  class="btn btn-primary" data-toggle="modal" data-target="#test" onclick="deleteroomresa(' +
           element.id +
           ');"><i class="fas fa-pencil"></i></button></td>'; //recupere l'id par ligne avec le element.id que l'on passe en parametre de fonctions pour les suppressions
         info.innerHTML += "</tr>";
@@ -483,6 +482,10 @@ function getActivite(){
   console.log
  }
  function deleteitem(id) {
+  const token = "D@lL@5Mùl!P@5S3"
+  const action = "cancel"
+  const service ="gite"
+  const object = "activityreservation"
   console.log("welcome in function deleteitem for the id :" + id);
   var result = confirm("Vous allez supprimer l'élément "+ id +" ?");
   if (result == true) {
@@ -496,13 +499,123 @@ function getActivite(){
       } else {
       }
     };
-    xhttp.open("DELETE",
-    "https://6057e432c3f49200173ad08d.mockapi.io/employees/" + id,
+    xhttp.open("POST",
+    "https://tst.quantiq.nc/devweb-cfa/api/index.php?service=gite&object=activityreservation&action=cancel",
     true
-  );
-    xhttp.send(JSON.stringify({ id: id }));
+  );xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  
+  console.log(token)
+  console.log(id)
+    xhttp.send(
+    "token=" +
+    token +
+    "&"+
+    "service="+
+    service+
+    "&"+
+    "object=" +
+    object+
+    "&"+ 
+    "action="+
+    action+
+    "&"+
+    "idActivityReservation="+ 
+    id
+    ,)
     console.log("success for the function delete item," + id + " is deleted");
     //console.log(id);
   } else {
   }
 }
+function deleteroomresa(id) {
+  const token = "D@lL@5Mùl!P@5S3"
+  const action = "cancel"
+  const service ="gite"
+  const object = "roomreservation"
+  console.log("welcome in function deleteitem for the id :" + id);
+  var result = confirm("Vous allez supprimer l'élément "+ id +" ?");
+  if (result == true) {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function () {
+      if (this.readyState == 4 && this.status == 200) {
+        var x = this.responseText;
+        var xparsed = JSON.parse(x);
+        console.log("func to supp")
+        //console.log(xparsed);
+      } else {
+      }
+    };
+    xhttp.open("POST",
+    "https://tst.quantiq.nc/devweb-cfa/api/index.php?service=gite&object=roomreservation&action=cancel",
+    true
+  );xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  
+  console.log(token)
+  console.log(id)
+    xhttp.send(
+    "token=" +
+    token +
+    "&"+
+    "service="+
+    service+
+    "&"+
+    "object=" +
+    object+
+    "&"+ 
+    "action="+
+    action+
+    "&"+
+    "idRoomReservation="+ 
+    id
+    ,)
+    console.log("success for the function delete item," + id + " is deleted");
+    //console.log(id);
+  } else {
+  }
+}
+
+function getResaroom(){
+  console.log('button getresaactivite')
+  var xhttp = new XMLHttpRequest();
+   xhttp.onreadystatechange = function () {
+     if (this.readyState == 4 && this.status == 200) {
+       var x = this.responseText;
+       var xparsed = JSON.parse(x);
+       console.log(xparsed);
+       const info = document.getElementById("TableResaroom");
+       xparsed.forEach((element) => {
+         info.innerHTML +=
+         "<tr>" +
+           //info.innerHTML +=
+           "<td>" +
+           element.number +
+           "</td>" +
+           "<td>" +
+           element.type +
+           "</td>" +
+           "<td>" +
+           element.landscape +
+           "</td>" +
+           "<td>" +
+           element.dateEntree +
+           "</td>" +
+           "<td>" +
+           element.dateSortie +
+           "</td>"+
+           '<td><button type="button"  class="btn btn-danger" onclick="deleteroomresa(' +
+           element.id +
+           ')" data-toggle="modal" data-target="#myModaltodelete" title="Delete"><i class="fas fa-trash fa-inverse"></i></button></td>'; //recupere l'id par ligne avec le element.id que l'on passe en parametre de fonctions pour les suppressions
+         info.innerHTML += "</tr>";
+       });
+     } else {
+       //document.getElementById("adress-output").innerHTML="error";
+       //console.log("dans le else de la fonction lance");
+     }
+   };
+   xhttp.open(
+     "GET",
+     "https://tst.quantiq.nc/devweb-cfa/api/index.php?service=gite&object=roomreservation&action=list",
+     true
+   ); // add id at the end of url to  located the good item
+   xhttp.send();
+ }
