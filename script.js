@@ -613,3 +613,4 @@ function getResaroom(){
    ); // add id at the end of url to  located the good item
    xhttp.send();
  }
+ 
