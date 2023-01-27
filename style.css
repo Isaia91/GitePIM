@@ -26,7 +26,11 @@ h3 {
 li {
   color: black;
   font-family: "Kalam", cursive;
-  font-size: 30px;
+  font-size: 25px;
 }
 
-/* navbar */
+#reservationlist {
+  color: rgb(0, 0, 0);
+  font-family: "Kalam", cursive;
+  font-size: 25px;
+}
