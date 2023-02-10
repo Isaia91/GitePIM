@@ -1,0 +1,64 @@
+.logo {
+  height: 175px;
+  width: 150px;
+}
+
+.jj {
+  background-color: #98c894;
+}
+
+.jj1 {
+  background-color: #f8f8f8;
+  color: white;
+}
+.jj2 {
+  background-color: #98c894;
+}
+p {
+  color: black;
+  font-family: "Kalam", cursive;
+  font-size: 25px;
+}
+h3 {
+  color: black;
+  font-family: "Kalam", cursive;
+}
+li {
+  color: black;
+  font-family: "Kalam", cursive;
+  font-size: 25px;
+}
+
+#reservationlist {
+  color: rgb(0, 0, 0);
+  font-family: "Kalam", cursive;
+  font-size: 25px;
+}
+
+#jemangeunepomme{
+  font-family: "kalam", cursive;
+  color: rgb(106, 145, 47);
+  font-size: larger;
+}
+
+.bttn{
+  margin-left: 40%;
+}
+
+.colortheme{
+  background-color: #98c894
+}
+
+.button-five {
+  background-color: #98c894;
+  border-radius: 25px;
+}
+#tohide{
+  display: none;
+  font-size: medium;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.whoknows{
+  background-color: #a5daa1
+}

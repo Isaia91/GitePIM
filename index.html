@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gite Pim</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i"
+      rel="stylesheet"
+    />
+    <link href="./style.css" rel="stylesheet" />
+    <script src="./script.js"></script>
+  </head>
+  <body onload="callactivity()">
+    <!-- LOGO----LOGO-----LOGO--LOGO---LOGO--LOGO--LOGO---LOGO---LOGO---LOGO-LOGO--LOGO---LOGO---LOGO---LOGO-->
+
+    <!-- NAVBAR----NAVBAR----NAVBAR--NAVBAR---NAVBAR----NAVBAR---NAVBAR---NAVBAR-----NAVBAR---NAVBAR -NAVBAR-->
+    <div class="row">
+      <div class="container">
+        <div class="col-md-12">
+          <img
+            id="home"
+            class="rounded mx-auto d-block logo"
+            src="./assets/gitePim-removebg-preview.png"
+            alt="logo Gite Pim"
+          />
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-md sticky-top navbar-light whoknows ">
+      <div class="container">
+          <div class="collapse navbar-collapse justify-content-center " id="navbar1">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Accueil</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#table">Restaurant</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#act">Activités</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#chambre">Chambres</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contacts</a>
+                </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+  
+    <!-- NAVBAR----NAVBAR----NAVBAR--NAVBAR---NAVBAR----NAVBAR---NAVBAR---NAVBAR-----NAVBAR---NAVBAR -NAVBAR-->
+    
+    <!-- CARROUSEL---CARROUSEL----CARROUSEL---CARROUSEL---CARROUSEL---CARROUSEL---CARROUSEL----CARROUSEL-----CARROUSEL-->
+    <div class="row">
+      <div class="container">
+        <div
+          id="carouselExampleControlsNoTouching"
+          class="carousel slide"
+          data-bs-touch="false"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./assets/paysage.jpg"
+                class="d-block w-100"
+                alt="Paysage paradisiaque"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/paysage1.jpg"
+                class="d-block w-100"
+                alt="Paysage venu du paradis"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/paysage2.jpg"
+                class="d-block w-100"
+                alt="Paysage qui vient du ciel"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControlsNoTouching"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControlsNoTouching"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- CARROUSEL---CARROUSEL----CARROUSEL---CARROUSEL---CARROUSEL---CARROUSEL---CARROUSEL----CARROUSEL-----CARROUSEL-->
+
+    <!-- TABLE--TABLE--TABLE--TABLE--TABLE--TABLE--TABLE--TABLE--TABLE--TABLE--TABLE---TABLE--TABLE --TABLE----TABLE---TABLE--TABLE-TABLE-->
+    <!-- -PLAT 1--PLAT 1---PLAT 1---PLAT 1---PLAT 1---PLAT 1--PLAT 1---PLAT 1----PLAT 1---PLAT 1--PLAT 1---PLAT 1---PLAT 1---PLAT 1---PLAT 1--PLAT 1---PLAT 1-->
+    <div class="jj1">
+      <div class="container">
+        <div class="row" id="table">
+          <div class="col-md-12 text-center pt-5 pb-5">
+            <h3>Les tables de Pim</h3>
+            <p class="mt-4">
+              Le Gîte de PIM vous accueille à sa table que vous soyez en
+              camping, bungalow ou meme de passage dans la région. Une cuisine
+              typiquement calédonienne et française. Les repas sont réaliser
+              avec des produits frais et locaux.
+            </p>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-4 mt-4 mb-4">
+            <h3 class="textcolor arvoregular mt-3">Poisson au curry</h3>
+            <img
+              class="rounded"
+              src="./assets/repascaledonien1.jpg"
+              style="width: 100%; height: 276px"
+              alt="Plat poisson au curry"
+            />
+            <p class="mt-4">
+              Un plat savoureux et équilibré qui représente la richesse
+              culinaire de la mer.
+            </p>
+            <!-- RESERVATION--RESERVATION ---RESERVATION -RESERVATION --RESERVATION ----RESERVATION ----RESERVATION --------RESERVATION ------RESERVATION ---------------------- -->
+            <button
+              class="btn btn-involved"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseDiner"
+              aria-expanded="false"
+              aria-controls="collapseDiner"
+            >
+              Réserver mon dîner
+            </button>
+            <div class="collapse" id="collapseDiner">
+              <div class="card card-body colortheme">
+                <div class="container">
+                  <form>
+                    <div class="mb-3">
+                      <label class="form-label">Activité:</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="diner"
+                        value="Dîner"
+                        aria-describedby="dinerReservation"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Date:</label>
+                      <input
+                        type="date"
+                        class="form-control"
+                        id="dinerDateReservation"
+                        aria-describedby="dinerDateReservation"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Heure de début:</label>
+                      <input
+                        type="time"
+                        step="1"
+                        class="form-control"
+                        id="dinerHeureDeDebut"
+                        aria-describedby="dinerHeureDeDebutReservation"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Heure de fin:</label>
+                      <input
+                        type="time"
+                        step="1"
+                        class="form-control"
+                        id="dinerHeureDeFin"
+                        aria-describedby="dinerHeureDeFinReservation"
+                      />
+                    </div>
+                    <button
+                      type="button"
+                      onclick="addDinerReservation(); window.location.reload(true);"
+                      class="btn btn-primary"
+                    >
+                      Réserver
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- PLAT 2 --PLAT 2---PLAT 2---PLAT 2--PLAT 2---PLAT 2---PLAT 2---PLAT 2---PLAT 2---PLAT 2--PLAT 2---PLAT 2---PLAT 2-->
+          <div class="col-md-4 mt-4 mb-4">
+            <h3 class="textcolor arvoregular mt-3">Bougnat fait maison</h3>
+            <img
+              class="rounded"
+              src="./assets/repascaledonien2.png"
+              style="width: 100%"
+              alt="Repas calédonien"
+            />
+            <p class="mt-4">
+              Découvrez les saveurs d'un plat local, plongez dans la culture
+              culinaire de la Nouvelle-Calédonie.
+            </p>
+          </div>
+          <!-- PLAT 2 --PLAT 2---PLAT 2---PLAT 2--PLAT 2---PLAT 2---PLAT 2---PLAT 2---PLAT 2---PLAT 2--PLAT 2---PLAT 2---PLAT 2-->
+
+          <!-- --PLAT 3 ---PLAT 3---PLAT 3---PLAT 3---PLAT 3--PLAT 3--PLAT 3---PLAT 3--PLAT 3---PLAT 3---PLAT 3--PLAT 3---PLAT 3 -->
+          <div class="col-md-4 mt-4 mb-4">
+            <h3 class="textcolor arvoregular mt-3">Poulet aigre-doux</h3>
+            <img
+              class="rounded"
+              src="./assets/repascaledonien3.png"
+              style="width: 100%"
+              alt="repas poulet aigre doux"
+            />
+            <p class="mt-4">
+              Savoureux et équilibré qui allie les saveurs sucrées et acides, ce
+              plat saura réveiller vos papilles.
+            </p>
+            <button
+              class="btn btn-involved"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseDéjeuner"
+              aria-expanded="false"
+              aria-controls="collapseDéjeuner"
+            >
+              Réserver mon déjeuner
+            </button>
+            <div class="collapse" id="collapseDéjeuner">
+              <div class="card card-body colortheme">
+                <div class="container">
+                  <form>
+                    <div class="mb-3">
+                      <label class="form-label">Activité:</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="dejeuner"
+                        value="Déjeuner"
+                        aria-describedby="dejeunerReservation"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Date:</label>
+                      <input
+                        type="date"
+                        class="form-control"
+                        id="dejeunerDateReservation"
+                        aria-describedby="dejeunerDateReservation"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Heure de début:</label>
+                      <input
+                        type="time"
+                        step="1"
+                        class="form-control"
+                        id="dejeunerHeureDeDebut"
+                        aria-describedby="dejeunerHeureDeDébutReservation"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Heure de fin:</label>
+                      <input
+                        type="time"
+                        step="1"
+                        class="form-control"
+                        id="dejeunerHeureDeFin"
+                        aria-describedby="dejeunerHeureDeFinReservation"
+                      />
+                    </div>
+                    <button
+                      type="button"
+                      onclick="addDejeunerReservation(); window.location.reload(true);"
+                      class="btn btn-primary"
+                    >
+                      Réserver
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- -ACTIVITE----ACTIVITE---ACTIVITE-----ACTIVITE------ACTIVITE----ACTIVITE-----ACTIVITE--ACTIVITE -->
+
+    <div class="jj1" id="activite">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center pt-5 pb-5" id="act">
+            <h3>ACTIVITÉS</h3>
+            <p class="mt-4">
+              Durant votre séjour vous pourrez pratiquer différentes activitées,
+              autant sur terre que dans l'eau.
+            </p>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-4 mt-4 mb-4">
+            <h3 class="textcolor arvoregular mt-3">Balade en Canoë</h3>
+            <img
+              class="rounded"
+              src="./assets/canoe.jpg"
+              style="width: 100%"
+              alt="balade en canoë"
+            />
+            <p class="mt-4">
+              Une balade en canoë vous permettra de découvrir la nature de
+              manière paisible.
+            </p>
+            <button
+              class="btn btn-involved"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseExample"
+              aria-expanded="false"
+              aria-controls="collapseExample"
+            >
+              Réserver mon canoë
+            </button>
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body colortheme">
+                <div class="container">
+                  <form id="form1">
+                    <div class="mb-3">
+                      <label class="form-label">Activité:</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="kanoe"
+                        value="Kanoé"
+                        aria-describedby="KanoeReservation"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Date:</label>
+                      <input
+                        type="date"
+                        class="form-control"
+                        id="kanoeDateReservation"
+                        aria-describedby="kanoeDateReservation"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Heure de début:</label>
+                      <input
+                        type="time"
+                        step="1"
+                        class="form-control"
+                        id="kanoeHeureDeDebut"
+                        aria-describedby="kanoeHeureDeDébutReservation"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Heure de fin:</label>
+                      <input
+                        type="time"
+                        step="1"
+                        class="form-control"
+                        id="kanoeHeureDeFin"
+                        aria-describedby="kanoeHeureDeFinReservation"
+                      />
+                    </div>
+                    <button
+                      type="button"
+                      onclick="addKanoeReservation(); window.location.reload(true);"
+                      class="btn btn-primary"
+                    >
+                      Réserver
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ACTIVITE 2 ---ACTIVITE 2---ACTIVITE 2----ACTIVITE 2----ACTIVITE 2---ACTIVITE 2---ACTIVITE 2---ACTIVITE 2---ACTIVITE 2--ACTIVITE 2------>
+          <div class="col-md-4 mt-4 mb-4">
+            <h3 class="textcolor arvoregular mt-3">Randonée dans la nature</h3>
+            <img
+              class="rounded"
+              src="./assets/test1.jpg"
+              style="width: 100%"
+              alt="balade en vélo"
+            />
+            <p class="mt-4">
+              Excellent moyen de découvrir des endroits en prenant soin de sa
+              santé.
+            </p>
+            <button
+              class="btn btn-involved"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseRandonnée"
+              aria-expanded="false"
+              aria-controls="collapseRandonnée"
+            >
+              Réserver ma randonnée
+            </button>
+            <div class="collapse" id="collapseRandonnée">
+              <div class="card card-body colortheme">
+                <div class="container">
+                  <form>
+                    <div class="mb-3">
+                      <label class="form-label">Activité:</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="randonnee"
+                        value="Randonnée"
+                        aria-describedby="randonneeReservation"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Date:</label>
+                      <input
+                        type="date"
+                        class="form-control"
+                        id="randonneeDateReservation"
+                        aria-describedby="randonneeDateReservation"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Heure de début:</label>
+                      <input
+                        type="time"
+                        step="1"
+                        class="form-control"
+                        id="randonneeHeureDeDebut"
+                        aria-describedby="randonneeHeuredeDebutReservation"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Heure de fin:</label>
+                      <input
+                        type="time"
+                        step="1"
+                        class="form-control"
+                        id="randonneeHeureDeFin"
+                        aria-describedby="randonneeHeureDeFinReservation"
+                      />
+                    </div>
+                    <button
+                      type="button"
+                      onclick="addRandonneeReservation(); window.location.reload(true);"
+                      class="btn btn-primary"
+                    >
+                      Réserver
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mt-4 mb-4">
+            <h3 class="textcolor arvoregular mt-3">Sortie en plongée</h3>
+            <img
+              class="rounded"
+              src="./assets/test2.jpg"
+              style="width: 100%"
+              alt="Image de plongée"
+            />
+            <p class="mt-4">
+              La plongée sous-marine, l'occasion parfaite de se déconnecter du
+              monde.
+            </p>
+            <button
+              class="btn btn-involved"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapsePlongée"
+              aria-expanded="false"
+              aria-controls="collapsePlongée"
+            >
+              Réserver mon activité
+            </button>
+            <div class="collapse" id="collapsePlongée">
+              <div class="card card-body colortheme">
+                <div class="container">
+                  <form>
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-9">
+                          <input type="checkbox" id="ageplonge" >
+                          <label for="scales">Vous-avez plus de 12 ans ?</label>
+                        </div>
+                        
+                        <div class="col-md-3">
+                            <i class="fas fa-info-circle " data-bs-toggle="tooltip" data-bs-placement="right" title="Interdit au moins de 12 ans"></i>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="mt-3 mb-3">
+                      <label class="form-label">Activité:</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="plongee"
+                        value="Plongée"
+                        aria-describedby="dejeunerReservation"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Date:</label>
+                      <input
+                        type="date"
+                        class="form-control"
+                        id="plongeeDateReservation"
+                        aria-describedby="dejeunerDateReservation"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Heure de début:</label>
+                      <input
+                        type="time"
+                        step="1"
+                        class="form-control"
+                        id="plongeeHeureDeDebut"
+                        aria-describedby="dejeunerHeureDeDébutReservation"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Heure de fin:</label>
+                      <input
+                        type="time"
+                        step="1"
+                        class="form-control"
+                        id="plongeeHeureDeFin"
+                        aria-describedby="dejeunerHeureDeFinReservation"
+                      />
+                    </div>
+                    <button
+                    id="young"
+                      type="button"
+                      onclick="addPlongeeReservation(); window.location.reload(true);"
+                      class="btn btn-primary disabled"
+                    >
+                      Réserver
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+        <div class="row" id="reservationlist">
+          <div class="col-md-4"></div>
+            <div class="col-md-4 text-center">
+              <button
+                class="btn btn-involved"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseActivity"
+                aria-expanded="false"
+                aria-controls="collapseActivity"
+                
+                id="jemangeunepomme"
+              >
+                Réserver mon acitivité
+              </button>
+              <div class="collapse" id="collapseActivity">
+                <div class="card card-body colortheme">
+                  <div class="container">
+                    <form>
+                      <div class="container" id="tohide">
+                        <div class="row">
+                          <div class="col-md-9">
+                            <input type="checkbox" id="ageactivite" >
+                            <label for="scales">Vous-avez plus de 12 ans ?</label>
+                          </div>
+                          
+                          <div class="col-md-3">
+                              <i class="fas fa-info-circle " data-bs-toggle="tooltip" data-bs-placement="right" title="Interdit au moins de 12 ans"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="mb-3">
+                        <label class="form-label">Activité:</label>
+                        <select
+                          type="text"
+                          class="form-control"
+                          id="selactivity"
+                          aria-describedby="ActivityReservation"
+                        ></select>
+                      </div>
+                      <div class="mb-3">
+                        <label class="form-label">Date:</label>
+                        <input
+                          type="date"
+                          class="form-control"
+                          id="ActivityDateReservation"
+                          aria-describedby="ActivityDateReservation"
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <label class="form-label">Heure de début:</label>
+                        <input
+                          type="time"
+                          step="1"
+                          class="form-control"
+                          id="ActivityHeureDeDebut"
+                          aria-describedby="ActivityHeureDeDebutReservation"
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <label class="form-label">Heure de fin:</label>
+                        <input
+                          type="time"
+                          step="1"
+                          class="form-control"
+                          id="ActivityHeureDeFin"
+                          aria-describedby="ActivityHeureDeFinReservation"
+                        />
+                      </div>
+                      <button
+                        id ="youngac"
+                        type="button"
+                        onclick="addActivityReservation(); window.location.reload(true);"
+                        class="btn btn-primary"
+                      >
+                        Réserver
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4"></div>
+          </div>
+        </div><div class="col-md-4">
+          <a href="indextable.html" target="_blank">Voir les réservations</a>
+        </div>
+      </div>
+    </div>
+    <!-- ---CHAMBRE---CHAMBRE--CHAMBRE--CHAMBRE--CHAMBRE---CHAMBRE---CHAMBRE---CHAMBRE---CHAMBRE-----CHAMBRE---CHAMBRE--- CHAMBRE-->
+    <div class="jj2">
+      <div class="container" id="chambre">
+        <div class="row">
+          <div class="col-md-12 text-center pt-5 pb-5">
+            <h3>Les lits de PIM</h3>
+            <p class="mt-4">
+              Le gite de Pim vous propose des réservations pour tous les budgets
+              et tous les conforts. Il ne vous reste plus qu'a choisir.
+            </p>
+          </div>
+        </div>
+
+        <!-- ---BUNGALOW--BUNGALOW---BUNGALOW----BUNGALOW--BUNGALOW---BUNGALOW---BUNGALOW---BUNGALOW---BUNGALOW-----BUNGALOW----BUNGALOW----BUNGALOW-------- -->
+
+        <div class="row text-center">
+          <div class="col-md-6 mt-4 mb-4">
+            <h3 class="textcolor arvoregular mt-3">Bungalow</h3>
+            <img
+              class="rounded"
+              src="./assets/bungalow.jpg"
+              style="width: 100%"
+              alt="Image d'un Bungalow"
+            />
+            <p class="mt-4">
+              Dormir dans un bungalow, c'est s'offrir une expérience de vacances
+              authentique et proche de la nature.
+            </p>
+            <button
+              class="btn btn-involved"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseBungalow"
+              aria-expanded="false"
+              aria-controls="collapseBungalow"
+            >
+              Réserver mon bungalow
+            </button>
+            <div class="collapse" id="collapseBungalow">
+              <div class="card card-body">
+                <div class="container">
+                  <form>
+                    <div class="mb-3">
+                      <label class="form-label">Choix du bungalow:</label>
+                      <select
+                        class="form-control"
+                        id="numberBungalow"
+                        aria-describedby="numeroBungalowReservation"
+                      >
+                        <option value="Selectionner la chambre">
+                          Sélectionner la chambre
+                        </option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                      </select>
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Date d'entrée:</label>
+                      <input
+                        type="date"
+                        class="form-control"
+                        id="DateDentreeBungalowReservation"
+                        aria-describedby="DateDentreeReservation"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Date de sortie:</label>
+                      <input
+                        type="date"
+                        class="form-control"
+                        id="DateDeSortieBungalowReservation"
+                        aria-describedby="DateDeSortieBungalowReservation"
+                      />
+                    </div>
+                    <button
+                      type="button"
+                      onclick="addBungalowReservation(); window.location.reload(true);"
+                      class="btn btn-primary"
+                    >
+                      Réserver
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <!--
+            <button
+              type="button"
+              onclick="getbungalow()"
+              class="btn btn-primary"
+            >
+              GET
+            </button>
+            <div>
+              <div class="table-wrapper-scroll-y my-custom-scrollbar">
+                <table
+                  class="table table-bordered table-striped mb-0"
+                  id="bungalowmodal"
+                >
+                  <tr>
+                    <th>id</th>
+                    <th>Type</th>
+                    <th>Lanscape</th>
+                    <th>Get</th>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            -->
+          </div>
+          <div class="col-md-6 mt-4 mb-4">
+            <h3 class="textcolor arvoregular mt-3">Chambre</h3>
+            <img
+              id="imgchambre"
+              class="rounded"
+              src="./assets/chambre.jpeg"
+              alt="Image d'une chambre du Gite"
+              style="height: 255px; width: 100%"
+            />
+            <p class="mt-4">
+              Optez pour un confort optimal et un emplacement idéal pour
+              explorer les alentours avec le confort a votre retour.
+            </p>
+            <button
+              class="btn btn-involved"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseChambre"
+              aria-expanded="false"
+              aria-controls="collapsePlongée"
+            >
+              Réserver ma chambre
+            </button>
+            <div class="collapse" id="collapseChambre">
+              <div class="card card-body">
+                <div class="container">
+                  <form>
+                    <div class="mb-3">
+                      <label class="form-label">Choix de la chambre:</label>
+                      <select
+                        class="form-control"
+                        id="numberChambre"
+                        aria-describedby="numeroChambreReservation"
+                      >
+                        <option value="Selectionner la chambre">
+                          Sélectionner la chambre
+                        </option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="8">8</option>
+                      </select>
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Date d'entrée:</label>
+                      <input
+                        type="date"
+                        class="form-control"
+                        id="DateDentreeChambreReservation"
+                        aria-describedby="DateDentreeReservation"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Date de sortie:</label>
+                      <input
+                        type="date"
+                        class="form-control"
+                        id="DateDeSortieChambreReservation"
+                        aria-describedby="DateDeSortieChambreReservation"
+                      />
+                    </div>
+                    <button
+                      type="button"
+                      onclick="addChambreReservation(); window.location.reload(true);"
+                      class="btn btn-primary"
+                    >
+                      Réserver
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+            <!--
+            <button type="button" onclick="getroom()" class="btn btn-primary">
+              GET
+            </button>
+            <div>
+              <div class="table-wrapper-scroll-y my-custom-scrollbar">
+                <table
+                  class="table table-bordered table-striped mb-0"
+                  id="roommodal"
+                >
+                  <tr>
+                    <th>id</th>
+                    <th>Type</th>
+                    <th>Lanscape</th>
+                    <th>Get</th>
+                  </tr>
+                </table>
+              </div>
+            </div>
+             -->
+          </div>
+        </div>
+        <a href="indextable2.html" target="_blank">Voir les réservations</a>
+      </div>
+    </div>
+    <div class="">
+      <div class="container rounded">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled mt-5">
+              <li class="mb-2">
+                <a
+                  target="_blank"
+                  href="https://www.google.fr/maps/place/Poum-Plage,+Nouvelle-Cal%C3%A9donie/@-20.1941834,164.0689202,15z/data=!3m1!4b1!4m12!1m5!3m4!2zMjDCsDExJzQ3LjYiUyAxNjTCsDA0JzE4LjEiRQ!8m2!3d-20.1965556!4d164.0716944!3m5!1s0x6e98d0f58d46a713:0x131af8aafe8bcdef!8m2!3d-20.194184!4d164.077675!16s%2Fg%2F1wk4d7l2"
+                  >57 Avenue de PIM-PAM</a
+                >
+              </li>
+              <li class="mb-2">Nouméa 98800,</li>
+              <li class="mb-2">Nouvelle-Calédonie</li>
+              <li class="mb-2">Téléphone: +687 24.31.00</li>
+              <li class="mb-2">
+                <a href="mailto:contact@gitedepim.nc">contact@gîtedepim.nc</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 mt-4"><a href ="#home">
+            <img
+              id="contact"
+              class="rounded mx-auto d-block logo"
+              src="./assets/gitePim-removebg-preview.png"
+              alt="Logo du Gite"
+            /></a>
+          </div>
+          <div class="col-md-4 d-flex justify-content-end align-items-start">
+            <ul class="list-unstyled mt-5">
+              <li class="mb-2"><a href="#acc">Accueil</a></li>
+              <li class="mb-2"><a href="#table">Restaurant</a></li>
+              <li class="mb-2"><a href="#activite">Activités</a></li>
+              <li class="mb-2"><a href="#chambre">Chambres</a></li>
+              <li class="mb-2">
+                <a href="mailto:contact@gitedepim.nc">Une question ?</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
