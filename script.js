@@ -14,8 +14,6 @@ function addBungalowReservation() {
     if (this.readyState == 4 && this.status == 201) {
       var x = this.responseText;
       var xparsed = JSON.parse(x);
-    } else {
-      alert('Une erreur est survenue')
     }
   };
   xhttp.open(
@@ -61,8 +59,6 @@ function addChambreReservation() {
     if (this.readyState == 4 && this.status == 201) {
       var x = this.responseText;
       var xparsed = JSON.parse(x);
-    } else {
-      alert('Une erreur est survenue')
     }
   };
   xhttp.open(
@@ -125,8 +121,6 @@ function getroom() {
           ');"><i class="fas fa-pencil"></i></button></td>'; //recupere l'id par ligne avec le element.id que l'on passe en parametre de fonctions pour les suppressions
         info.innerHTML += "</tr>";
       });
-    } else {
-      alert('Une erreur est survenue')
     }
   };
   xhttp.open(
@@ -165,8 +159,6 @@ function getbungalow() {
           ');"><i class="fas fa-pencil"></i></button></td>'; //recupere l'id par ligne avec le element.id que l'on passe en parametre de fonctions pour les suppressions
         info.innerHTML += "</tr>";
       });
-    } else {
-      alert('Une erreur est survenue')
     }
   };
   xhttp.open(
@@ -207,8 +199,6 @@ function getResaActivite() {
           ')" data-toggle="modal" data-target="#myModaltodelete" title="Delete"><i class="fas fa-trash fa-inverse"></i></button></td>'; //recupere l'id par ligne avec le element.id que l'on passe en parametre de fonctions pour les suppressions
         info.innerHTML += "</tr>";
       });
-    } else {
-      alert('Une erreur est survenue')
     }
   };
   xhttp.open(
@@ -228,8 +218,6 @@ function getActivite() {
       var x = this.responseText;
       var xparsed = JSON.parse(x);
       console.log(xparsed);
-    } else {
-      alert('Une erreur est survenue')
     }
   };
   xhttp.open(
@@ -256,8 +244,6 @@ function deleteitem(id) {
         var xparsed = JSON.parse(x);
         console.log("func to supp");
         //console.log(xparsed);
-      } else {
-        alert('Une erreur est survenue')
       }
     };
     xhttp.open(
@@ -305,8 +291,6 @@ function deleteroomresa(id) {
         var x = this.responseText;
         var xparsed = JSON.parse(x);
         console.log("func to supp");
-      } else {
-        alert('Une erreur est survenue')
       }
     };
     xhttp.open(
@@ -374,8 +358,6 @@ function getResaroom() {
           ')" data-toggle="modal" data-target="#myModaltodelete" title="Delete"><i class="fas fa-trash fa-inverse "></i></button></td>'; //recupere l'id par ligne avec le element.id que l'on passe en parametre de fonctions pour les suppressions
         info.innerHTML += "</tr>";
       });
-    } else {
-      alert('Une erreur est survenue')
     }
   };
   xhttp.open(
@@ -419,8 +401,6 @@ function reserverRepas() {
       if (this.readyState == 4 && this.status == 201) {
         var x = this.responseText;
         var xparsed = JSON.parse(x);
-      } else {
-        alert('Une erreur est survenue')
       }
     };
     xhttp.open(
@@ -484,8 +464,6 @@ function reserverActivite() {
       if (this.readyState == 4 && this.status == 201) {
         var x = this.responseText;
         var xparsed = JSON.parse(x);
-      } else {
-        alert('Une erreur est survenue')
       }
     };
     xhttp.open(
