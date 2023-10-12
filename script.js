@@ -3,247 +3,6 @@ function letspop() {
   window.alert("Réservation passée");
 }
 
-//Ajouter une resa randonée (activité)
-function addKanoeReservation() {
-  const token = "D@lL@5Mùl!P@5S3";
-  const service = "gite";
-  const object = "activityreservation";
-  const action = "create";
-  var xhttp = new XMLHttpRequest();
-
-  xhttp.onreadystatechange = function () {
-    if (this.readyState == 4 && this.status == 201) {
-      var x = this.responseText;
-      var xparsed = JSON.parse(x);
-    }
-  };
-  xhttp.open(
-    "POST",
-    "https://tst.quantiq.nc/devweb-cfa/api/index.php?service=gite&object=activityreservation&action=create",
-    true
-  );
-  xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-
-  xhttp.send(
-    "token=" +
-      token +
-      "&" +
-      "service=" +
-      service +
-      "&" +
-      "object=" +
-      object +
-      "&" +
-      "action=" +
-      action +
-      "&" +
-      "date=" +
-      document.querySelector("#kanoeDateReservation").value +
-      "&" +
-      "heureDebut=" +
-      document.querySelector("#kanoeHeureDeDebut").value +
-      "&" +
-      "heureFin=" +
-      document.querySelector("#kanoeHeureDeFin").value +
-      "&" +
-      "activite=" +
-      document.querySelector("#kanoe").value
-  );
-  letspop();
-}
-
-//Ajouter une resa randonée (activité)
-function addRandonneeReservation() {
-  const token = "D@lL@5Mùl!P@5S3";
-  const service = "gite";
-  const object = "activityreservation";
-  const action = "create";
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function () {
-    if (this.readyState == 4 && this.status == 201) {
-      var x = this.responseText;
-      var xparsed = JSON.parse(x);
-    }
-  };
-  xhttp.open(
-    "POST",
-    "https://tst.quantiq.nc/devweb-cfa/api/index.php?service=gite&object=activityreservation&action=create",
-    true
-  );
-  xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-
-  xhttp.send(
-    "token=" +
-      token +
-      "&" +
-      "service=" +
-      service +
-      "&" +
-      "object=" +
-      object +
-      "&" +
-      "action=" +
-      action +
-      "&" +
-      "date=" +
-      document.querySelector("#randonneeDateReservation").value +
-      "&" +
-      "heureDebut=" +
-      document.querySelector("#randonneeHeureDeDebut").value +
-      "&" +
-      "heureFin=" +
-      document.querySelector("#randonneeHeureDeFin").value +
-      "&" +
-      "activite=" +
-      document.querySelector("#randonnee").value
-  );
-  letspop();
-}
-
-//Ajouter une resa plongée(activité)
-function addPlongeeReservation() {
-  const token = "D@lL@5Mùl!P@5S3";
-  const service = "gite";
-  const object = "activityreservation";
-  const action = "create";
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function () {
-    if (this.readyState == 4 && this.status == 201) {
-      var x = this.responseText;
-      var xparsed = JSON.parse(x);
-    }
-  };
-  xhttp.open(
-    "POST",
-    "https://tst.quantiq.nc/devweb-cfa/api/index.php?service=gite&object=activityreservation&action=create",
-    true
-  );
-  xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-
-  xhttp.send(
-    "token=" +
-      token +
-      "&" +
-      "service=" +
-      service +
-      "&" +
-      "object=" +
-      object +
-      "&" +
-      "action=" +
-      action +
-      "&" +
-      "date=" +
-      document.querySelector("#plongeeDateReservation").value +
-      "&" +
-      "heureDebut=" +
-      document.querySelector("#plongeeHeureDeDebut").value +
-      "&" +
-      "heureFin=" +
-      document.querySelector("#plongeeHeureDeFin").value +
-      "&" +
-      "activite=" +
-      document.querySelector("#plongee").value
-  );
-  letspop();
-}
-
-//Ajouter une resa diner (activité)
-function addDinerReservation() {
-  const token = "D@lL@5Mùl!P@5S3";
-  const service = "gite";
-  const object = "activityreservation";
-  const action = "create";
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function () {
-    if (this.readyState == 4 && this.status == 201) {
-      var x = this.responseText;
-      var xparsed = JSON.parse(x);
-    }
-  };
-  xhttp.open(
-    "POST",
-    "https://tst.quantiq.nc/devweb-cfa/api/index.php?service=gite&object=activityreservation&action=create",
-    true
-  );
-  xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-
-  xhttp.send(
-    "token=" +
-      token +
-      "&" +
-      "service=" +
-      service +
-      "&" +
-      "object=" +
-      object +
-      "&" +
-      "action=" +
-      action +
-      "&" +
-      "date=" +
-      document.querySelector("#dinerDateReservation").value +
-      "&" +
-      "heureDebut=" +
-      document.querySelector("#dinerHeureDeDebut").value +
-      "&" +
-      "heureFin=" +
-      document.querySelector("#dinerHeureDeFin").value +
-      "&" +
-      "activite=" +
-      document.querySelector("#diner").value
-  );
-  letspop();
-}
-
-//Ajouter une resa dejeuner (activité)
-function addDejeunerReservation() {
-  const token = "D@lL@5Mùl!P@5S3";
-  const service = "gite";
-  const object = "activityreservation";
-  const action = "create";
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function () {
-    if (this.readyState == 4 && this.status == 201) {
-      var x = this.responseText;
-      var xparsed = JSON.parse(x);
-    }
-  };
-  xhttp.open(
-    "POST",
-    "https://tst.quantiq.nc/devweb-cfa/api/index.php?service=gite&object=activityreservation&action=create",
-    true
-  );
-  xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-
-  xhttp.send(
-    "token=" +
-      token +
-      "&" +
-      "service=" +
-      service +
-      "&" +
-      "object=" +
-      object +
-      "&" +
-      "action=" +
-      action +
-      "&" +
-      "date=" +
-      document.querySelector("#dejeunerDateReservation").value +
-      "&" +
-      "heureDebut=" +
-      document.querySelector("#dejeunerHeureDeDebut").value +
-      "&" +
-      "heureFin=" +
-      document.querySelector("#dejeunerHeureDeFin").value +
-      "&" +
-      "activite=" +
-      document.querySelector("#dejeuner").value
-  );
-  letspop();
-}
-
 //Ajouter une resa bungalow
 function addBungalowReservation() {
   const token = "D@lL@5Mùl!P@5S3";
@@ -255,6 +14,8 @@ function addBungalowReservation() {
     if (this.readyState == 4 && this.status == 201) {
       var x = this.responseText;
       var xparsed = JSON.parse(x);
+    } else {
+      alert('Une erreur est survenue')
     }
   };
   xhttp.open(
@@ -300,6 +61,8 @@ function addChambreReservation() {
     if (this.readyState == 4 && this.status == 201) {
       var x = this.responseText;
       var xparsed = JSON.parse(x);
+    } else {
+      alert('Une erreur est survenue')
     }
   };
   xhttp.open(
@@ -363,8 +126,7 @@ function getroom() {
         info.innerHTML += "</tr>";
       });
     } else {
-      //document.getElementById("adress-output").innerHTML="error";
-      //console.log("dans le else de la fonction lance");
+      alert('Une erreur est survenue')
     }
   };
   xhttp.open(
@@ -404,8 +166,7 @@ function getbungalow() {
         info.innerHTML += "</tr>";
       });
     } else {
-      //document.getElementById("adress-output").innerHTML="error";
-      //console.log("dans le else de la fonction lance");
+      alert('Une erreur est survenue')
     }
   };
   xhttp.open(
@@ -429,10 +190,6 @@ function getResaActivite() {
       xparsed.forEach((element) => {
         info.innerHTML +=
           "<tr>" +
-          //info.innerHTML +=
-          "<td>" +
-          element.id +
-          "</td>" +
           "<td>" +
           element.activite +
           "</td>" +
@@ -451,8 +208,7 @@ function getResaActivite() {
         info.innerHTML += "</tr>";
       });
     } else {
-      //document.getElementById("adress-output").innerHTML="error";
-      //console.log("dans le else de la fonction lance");
+      alert('Une erreur est survenue')
     }
   };
   xhttp.open(
@@ -473,8 +229,7 @@ function getActivite() {
       var xparsed = JSON.parse(x);
       console.log(xparsed);
     } else {
-      //document.getElementById("adress-output").innerHTML="error";
-      //console.log("dans le else de la fonction lance");
+      alert('Une erreur est survenue')
     }
   };
   xhttp.open(
@@ -483,11 +238,6 @@ function getActivite() {
     true
   ); // add id at the end of url to  located the good item
   xhttp.send();
-}
-
-//check si l'on recupere bien l'id (juste informatif)
-function loaddata(id) {
-  console.log;
 }
 
 //Pour supprimer une resa Activité
@@ -507,6 +257,7 @@ function deleteitem(id) {
         console.log("func to supp");
         //console.log(xparsed);
       } else {
+        alert('Une erreur est survenue')
       }
     };
     xhttp.open(
@@ -535,7 +286,6 @@ function deleteitem(id) {
         id
     );
     console.log("success for the function delete item," + id + " is deleted");
-    //console.log(id);
   } else {
   }
   window.location.reload(true);
@@ -555,8 +305,8 @@ function deleteroomresa(id) {
         var x = this.responseText;
         var xparsed = JSON.parse(x);
         console.log("func to supp");
-        //console.log(xparsed);
       } else {
+        alert('Une erreur est survenue')
       }
     };
     xhttp.open(
@@ -586,8 +336,7 @@ function deleteroomresa(id) {
     );
     console.log("success for the function delete item," + id + " is deleted");
     //console.log(id);
-  } else {
-  }
+  } 
   window.location.reload(true);
 }
 
@@ -626,8 +375,7 @@ function getResaroom() {
         info.innerHTML += "</tr>";
       });
     } else {
-      //document.getElementById("adress-output").innerHTML="error";
-      //console.log("dans le else de la fonction lance");
+      alert('Une erreur est survenue')
     }
   };
   xhttp.open(
@@ -639,66 +387,40 @@ function getResaroom() {
 }
 
 //Appel pour avoir toutes les activités (pour les afficher plus tard dans le menu déroulant) 
-function callactivity() {
-  //on la charge dans le chargement de la page
-  console.log("hallo wurld");
-  const k = document.getElementById("selactivity");
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function () {
-    if (this.readyState == 4 && this.status == 200) {
-      var x = this.responseText;
-      var xparsed = JSON.parse(x);
-      console.log(x);
-      console.log(typeof x);
-      console.log(xparsed);
-      console.log(typeof xparsed);
-      xparsed.forEach((element) => {
-        const tesbete = document.createElement("option"); //creer une "balise" option pour le menu déroulant
-        console.log(element);
-        tesbete.value = element;
-        const val = tesbete.value;
-        tesbete.text = element;
-        console.log("val  = " + val);
-        k.add(tesbete, element);
-      });
-      /*for(let i in xparsed ){
-        let option = document.createElement('option');
-        option.setAttribute('value',xparsed[i]);
-        let optiontxt = document.createTextNode(i);
-        option.appendChild(optiontxt);
-        k.appendChild(option)
-        }*/
-    } else {
-      //document.getElementById("adress-output").innerHTML="error";
-      //console.log("dans le else de la fonction lance");
-    }
-  };
-  xhttp.open(
-    "GET",
-    "https://tst.quantiq.nc/devweb-cfa/api/index.php?service=gite&object=activity&action=list",
-    true
-  ); // add id at the end of url to  located the good item
-  xhttp.send();
-}
+
 
 //Ajouter une activitée (menu dynamique)
-function addActivityReservation() {
-  let x = document.getElementById("selactivity").value;
-  let y = document.getElementById("ActivityDateReservation").value;
-  let k = document.getElementById("ActivityHeureDeDebut").value;
-  let z = document.getElementById("ActivityHeureDeFin").value;
-  if (formchecker(x, y, k, z) === true) {
-    console.log("n'est pas vide");
+
+//function pour recharger la page a l'appel
+function reloadpage() {
+  window.location.reload(true);
+}
+
+/* Do not flame me for var names */
+
+function reserverRepas() {
+  // Récupérez la valeur sélectionnée dans le menu déroulant "repas"
+  let repas = document.querySelector('#repas').value;
+
+  // Récupérez les autres valeurs des champs de formulaire si nécessaire
+  let repasDate = document.querySelector('#RepasDateReservation').value;
+  let heureDeDebut = document.querySelector('#RepasHeureDeDebut').value;
+  let heureDeFin = document.querySelector('#RepasHeureDeFin').value;
+
+  // Utilisez une structure conditionnelle (if-else) pour déterminer le comportement en fonction de la valeur de l'option
+  if (repas && repasDate && heureDeDebut && heureDeFin) {
+    console.log("Vous avez choisi l'option Dîner.");
     const token = "D@lL@5Mùl!P@5S3";
     const service = "gite";
     const object = "activityreservation";
     const action = "create";
     var xhttp = new XMLHttpRequest();
-    formchecker();
     xhttp.onreadystatechange = function () {
       if (this.readyState == 4 && this.status == 201) {
         var x = this.responseText;
         var xparsed = JSON.parse(x);
+      } else {
+        alert('Une erreur est survenue')
       }
     };
     xhttp.open(
@@ -707,7 +429,7 @@ function addActivityReservation() {
       true
     );
     xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-
+  
     xhttp.send(
       "token=" +
         token +
@@ -722,135 +444,86 @@ function addActivityReservation() {
         action +
         "&" +
         "date=" +
-        document.querySelector("#ActivityDateReservation").value +
+        repasDate +
         "&" +
         "heureDebut=" +
-        document.querySelector("#ActivityHeureDeDebut").value +
+        heureDeDebut +
         "&" +
         "heureFin=" +
-        document.querySelector("#ActivityHeureDeFin").value +
+        heureDeFin +
         "&" +
         "activite=" +
-        document.querySelector("#selactivity").value
+        repas
     );
     letspop();
-  } else {
-    window.alert("Il faut remplir tout les champs");
+  } 
+  else {
+    alert('Il manque des informations pour pouvoir réserver.')
   }
-  /*
-  const token = "D@lL@5Mùl!P@5S3";
-  const service = "gite";
-  const object = "activityreservation";
-  const action = "create";
-  var xhttp = new XMLHttpRequest();
-  formchecker();
-  xhttp.onreadystatechange = function () {
-    if (this.readyState == 4 && this.status == 201) {
-      var x = this.responseText;
-      var xparsed = JSON.parse(x);
-    }
-  };
-  xhttp.open(
-    "POST",
-    "https://tst.quantiq.nc/devweb-cfa/api/index.php?service=gite&object=activityreservation&action=create",
-    true
-  );
-  xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-
-  xhttp.send(
-    "token=" +
-      token +
-      "&" +
-      "service=" +
-      service +
-      "&" +
-      "object=" +
-      object +
-      "&" +
-      "action=" +
-      action +
-      "&" +
-      "date=" +
-      document.querySelector("#ActivityDateReservation").value +
-      "&" +
-      "heureDebut=" +
-      document.querySelector("#ActivityHeureDeDebut").value +
-      "&" +
-      "heureFin=" +
-      document.querySelector("#ActivityHeureDeFin").value +
-      "&" +
-      "activite=" +
-      document.querySelector("#selactivity").value
-  )letspop();*/
 }
 
-//function pour recharger la page a l'appel
-function reloadpage() {
-  window.location.reload(true);
+function reserverActivite() {
+  // Récupérez la valeur sélectionnée dans le menu déroulant "repas"
+  let activite = document.querySelector('#activite').value;
+
+  // Récupérez les autres valeurs des champs de formulaire si nécessaire
+  let activiteDate = document.querySelector('#ActivityDateReservation').value;
+  let heureDeDebut = document.querySelector('#ActivityHeureDeDebut').value;
+  let heureDeFin = document.querySelector('#ActivityHeureDeFin').value;
+
+  // Utilisez une structure conditionnelle (if-else) pour déterminer le comportement en fonction de la valeur de l'option
+  if ((activite === 'Kanoé' || activite === 'Randonnée' || activite === 'Plongée') && activiteDate && heureDeDebut && heureDeFin)
+ {
+    console.log("Vous avez choisi l'option Dîner.");
+    const token = "D@lL@5Mùl!P@5S3";
+    const service = "gite";
+    const object = "activityreservation";
+    const action = "create";
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function () {
+      if (this.readyState == 4 && this.status == 201) {
+        var x = this.responseText;
+        var xparsed = JSON.parse(x);
+      } else {
+        alert('Une erreur est survenue')
+      }
+    };
+    xhttp.open(
+      "POST",
+      "https://tst.quantiq.nc/devweb-cfa/api/index.php?service=gite&object=activityreservation&action=create",
+      true
+    );
+    xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  
+    xhttp.send(
+      "token=" +
+        token +
+        "&" +
+        "service=" +
+        service +
+        "&" +
+        "object=" +
+        object +
+        "&" +
+        "action=" +
+        action +
+        "&" +
+        "date=" +
+        activiteDate +
+        "&" +
+        "heureDebut=" +
+        heureDeDebut +
+        "&" +
+        "heureFin=" +
+        heureDeFin +
+        "&" +
+        "activite=" +
+        activite
+    );
+    letspop();
+    // Ajoutez ici le code spécifique pour l'option Dîner
+  }
+  else {
+    alert('Il manque des informations pour pouvoir réserver.')
+  }
 }
-
-//Pour le popup lors du survol du 'i' dans la modal formulaire pour la résa plongée
-var tooltipTriggerList = [].slice.call(
-  document.querySelectorAll('[data-bs-toggle="tooltip"]')
-);
-var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-  return new bootstrap.Tooltip(tooltipTriggerEl);
-});
-
-//verrouiller button reserver plongée si <12 du formulaire reservé a plongée
-document.getElementById("ageplonge").addEventListener("change", function () {
-  if (this.checked) {
-    console.log("Peut pratiquer la plongée");
-    const p = document.getElementById("young");
-    p.classList.remove("disabled"); //enleve la class bootsrap qui 'desactive' le button
-  } else {
-    console.log("Bah peut pas pratiquer la plongée");
-    console.log("Peut pratiquer la plongée");
-    const p = document.getElementById("young");
-    p.classList.add("disabled"); // met-remet la class bootsrap permettant de desactiver le boutton
-  }
-});
-
-//Pour la case a cocher de "Reserver mon activité"
-document.getElementById("ageactivite").addEventListener("change", function () {
-  if (this.checked) {
-    console.log("Peut pratiquer la plongée");
-    const p = document.getElementById("youngac");
-    p.classList.remove("disabled"); //enleve la class bootsrap qui 'desactive' le button
-  } else {
-    console.log("Bah peut pas pratiquer la plongée");
-    console.log("Peut pratiquer la plongée");
-    const p = document.getElementById("youngac");
-    p.classList.add("disabled"); // met-remet la class bootsrap permettant de desactiver le boutton
-  }
-});
-
-//Si l'activitée choisit est 'Plongée'
-document.getElementById("selactivity").addEventListener("change", function () {
-  console.log(document.getElementById("selactivity").value);
-  if (document.getElementById("selactivity").value == "Plongée") {
-    //si l'activité choisi est "plongée" alors on check l'age
-    console.log("afficher la case a cocher");
-    document.getElementById("youngac").classList.add("disabled");
-
-    document.getElementById("tohide").style.display = "block"; //on affiche la case a cocher
-  } else {
-    console.log("pas besoin de case a cocher");
-    document.getElementById("youngac").classList.remove("disabled");
-    document.getElementById("tohide").style.display = "none"; //on cache-recache la case a cocher si l'activité n'est pas 'Plongée'
-  }
-});
-
-//Faire en sorte que le formulaire soit remplis pour pouvoir le soumettre
-function formchecker(x, y, k, z) {
-  if (x == "" || y == "" || k == "" || z == "") {
-    return false;
-  } else {
-    return true;
-  }
-  /*en parametres les champs/input du formulaire (on verifie que chaque input ne soit pas vides)
-    PS:pas d'idées pour le noms des variables
-    */
-}
-
-/* Do not flame me for var names */

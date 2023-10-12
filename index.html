@@ -17,7 +17,12 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
     <link
       href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i"
       rel="stylesheet"
@@ -25,7 +30,7 @@
     <link href="./style.css" rel="stylesheet" />
     <script src="./script.js"></script>
   </head>
-  <body onload="callactivity()">
+  <body>
     <!-- LOGO----LOGO-----LOGO--LOGO---LOGO--LOGO--LOGO---LOGO---LOGO---LOGO-LOGO--LOGO---LOGO---LOGO---LOGO-->
 
     <!-- NAVBAR----NAVBAR----NAVBAR--NAVBAR---NAVBAR----NAVBAR---NAVBAR---NAVBAR-----NAVBAR---NAVBAR -NAVBAR-->
@@ -41,32 +46,35 @@
         </div>
       </div>
     </div>
-    <nav class="navbar navbar-expand-md sticky-top navbar-light whoknows ">
+    <nav class="navbar navbar-expand-md sticky-top navbar-light whoknows">
       <div class="container">
-          <div class="collapse navbar-collapse justify-content-center " id="navbar1">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Accueil</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#table">Restaurant</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#act">Activités</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#chambre">Chambres</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#contact">Contacts</a>
-                </li>
-              </ul>
-          </div>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbar1"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#table">Restaurant</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#act">Activités</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#chambre">Chambres</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contacts</a>
+            </li>
+          </ul>
+        </div>
       </div>
-  </nav>
-  
+    </nav>
+
     <!-- NAVBAR----NAVBAR----NAVBAR--NAVBAR---NAVBAR----NAVBAR---NAVBAR---NAVBAR-----NAVBAR---NAVBAR -NAVBAR-->
-    
+
     <!-- CARROUSEL---CARROUSEL----CARROUSEL---CARROUSEL---CARROUSEL---CARROUSEL---CARROUSEL----CARROUSEL-----CARROUSEL-->
     <div class="row">
       <div class="container">
@@ -150,70 +158,6 @@
               culinaire de la mer.
             </p>
             <!-- RESERVATION--RESERVATION ---RESERVATION -RESERVATION --RESERVATION ----RESERVATION ----RESERVATION --------RESERVATION ------RESERVATION ---------------------- -->
-            <button
-              class="btn btn-involved"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseDiner"
-              aria-expanded="false"
-              aria-controls="collapseDiner"
-            >
-              Réserver mon dîner
-            </button>
-            <div class="collapse" id="collapseDiner">
-              <div class="card card-body colortheme">
-                <div class="container">
-                  <form>
-                    <div class="mb-3">
-                      <label class="form-label">Activité:</label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="diner"
-                        value="Dîner"
-                        aria-describedby="dinerReservation"
-                      />
-                    </div>
-                    <div class="mb-3">
-                      <label class="form-label">Date:</label>
-                      <input
-                        type="date"
-                        class="form-control"
-                        id="dinerDateReservation"
-                        aria-describedby="dinerDateReservation"
-                      />
-                    </div>
-                    <div class="mb-3">
-                      <label class="form-label">Heure de début:</label>
-                      <input
-                        type="time"
-                        step="1"
-                        class="form-control"
-                        id="dinerHeureDeDebut"
-                        aria-describedby="dinerHeureDeDebutReservation"
-                      />
-                    </div>
-                    <div class="mb-3">
-                      <label class="form-label">Heure de fin:</label>
-                      <input
-                        type="time"
-                        step="1"
-                        class="form-control"
-                        id="dinerHeureDeFin"
-                        aria-describedby="dinerHeureDeFinReservation"
-                      />
-                    </div>
-                    <button
-                      type="button"
-                      onclick="addDinerReservation(); window.location.reload(true);"
-                      class="btn btn-primary"
-                    >
-                      Réserver
-                    </button>
-                  </form>
-                </div>
-              </div>
-            </div>
           </div>
           <!-- PLAT 2 --PLAT 2---PLAT 2---PLAT 2--PLAT 2---PLAT 2---PLAT 2---PLAT 2---PLAT 2---PLAT 2--PLAT 2---PLAT 2---PLAT 2-->
           <div class="col-md-4 mt-4 mb-4">
@@ -244,37 +188,44 @@
               Savoureux et équilibré qui allie les saveurs sucrées et acides, ce
               plat saura réveiller vos papilles.
             </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4"></div>
+          <div class="col-md-4 text-center">
             <button
               class="btn btn-involved"
               type="button"
               data-bs-toggle="collapse"
-              data-bs-target="#collapseDéjeuner"
+              data-bs-target="#collapseRepas"
               aria-expanded="false"
-              aria-controls="collapseDéjeuner"
+              aria-controls="collapseRepas"
+              id="jemangeunepomme"
             >
-              Réserver mon déjeuner
+              Réserver mon repas
             </button>
-            <div class="collapse" id="collapseDéjeuner">
+            <div class="collapse" id="collapseRepas">
               <div class="card card-body colortheme">
                 <div class="container">
                   <form>
                     <div class="mb-3">
                       <label class="form-label">Activité:</label>
-                      <input
+                      <select
                         type="text"
                         class="form-control"
-                        id="dejeuner"
-                        value="Déjeuner"
-                        aria-describedby="dejeunerReservation"
-                      />
+                        id="repas"
+                        aria-describedby="ActivityReservation"
+                      >
+                        <option value="Dîner">Dîner</option>
+                        <option value="Déjeuner">Déjeuner</option>
+                      </select>
                     </div>
                     <div class="mb-3">
                       <label class="form-label">Date:</label>
                       <input
                         type="date"
                         class="form-control"
-                        id="dejeunerDateReservation"
-                        aria-describedby="dejeunerDateReservation"
+                        id="RepasDateReservation"
                       />
                     </div>
                     <div class="mb-3">
@@ -283,8 +234,7 @@
                         type="time"
                         step="1"
                         class="form-control"
-                        id="dejeunerHeureDeDebut"
-                        aria-describedby="dejeunerHeureDeDébutReservation"
+                        id="RepasHeureDeDebut"
                       />
                     </div>
                     <div class="mb-3">
@@ -293,13 +243,13 @@
                         type="time"
                         step="1"
                         class="form-control"
-                        id="dejeunerHeureDeFin"
-                        aria-describedby="dejeunerHeureDeFinReservation"
+                        id="RepasHeureDeFin"
                       />
                     </div>
                     <button
+                      id="youngac"
                       type="button"
-                      onclick="addDejeunerReservation(); window.location.reload(true);"
+                      onclick="reserverRepas(); window.location.reload()"
                       class="btn btn-primary"
                     >
                       Réserver
@@ -309,13 +259,14 @@
               </div>
             </div>
           </div>
+          <div class="col-md-4"></div>
         </div>
       </div>
     </div>
 
     <!-- -ACTIVITE----ACTIVITE---ACTIVITE-----ACTIVITE------ACTIVITE----ACTIVITE-----ACTIVITE--ACTIVITE -->
 
-    <div class="jj1" id="activite">
+    <div class="jj1">
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center pt-5 pb-5" id="act">
@@ -339,70 +290,6 @@
               Une balade en canoë vous permettra de découvrir la nature de
               manière paisible.
             </p>
-            <button
-              class="btn btn-involved"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseExample"
-              aria-expanded="false"
-              aria-controls="collapseExample"
-            >
-              Réserver mon canoë
-            </button>
-            <div class="collapse" id="collapseExample">
-              <div class="card card-body colortheme">
-                <div class="container">
-                  <form id="form1">
-                    <div class="mb-3">
-                      <label class="form-label">Activité:</label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="kanoe"
-                        value="Kanoé"
-                        aria-describedby="KanoeReservation"
-                      />
-                    </div>
-                    <div class="mb-3">
-                      <label class="form-label">Date:</label>
-                      <input
-                        type="date"
-                        class="form-control"
-                        id="kanoeDateReservation"
-                        aria-describedby="kanoeDateReservation"
-                      />
-                    </div>
-                    <div class="mb-3">
-                      <label class="form-label">Heure de début:</label>
-                      <input
-                        type="time"
-                        step="1"
-                        class="form-control"
-                        id="kanoeHeureDeDebut"
-                        aria-describedby="kanoeHeureDeDébutReservation"
-                      />
-                    </div>
-                    <div class="mb-3">
-                      <label class="form-label">Heure de fin:</label>
-                      <input
-                        type="time"
-                        step="1"
-                        class="form-control"
-                        id="kanoeHeureDeFin"
-                        aria-describedby="kanoeHeureDeFinReservation"
-                      />
-                    </div>
-                    <button
-                      type="button"
-                      onclick="addKanoeReservation(); window.location.reload(true);"
-                      class="btn btn-primary"
-                    >
-                      Réserver
-                    </button>
-                  </form>
-                </div>
-              </div>
-            </div>
           </div>
           <!-- ACTIVITE 2 ---ACTIVITE 2---ACTIVITE 2----ACTIVITE 2----ACTIVITE 2---ACTIVITE 2---ACTIVITE 2---ACTIVITE 2---ACTIVITE 2--ACTIVITE 2------>
           <div class="col-md-4 mt-4 mb-4">
@@ -417,70 +304,6 @@
               Excellent moyen de découvrir des endroits en prenant soin de sa
               santé.
             </p>
-            <button
-              class="btn btn-involved"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseRandonnée"
-              aria-expanded="false"
-              aria-controls="collapseRandonnée"
-            >
-              Réserver ma randonnée
-            </button>
-            <div class="collapse" id="collapseRandonnée">
-              <div class="card card-body colortheme">
-                <div class="container">
-                  <form>
-                    <div class="mb-3">
-                      <label class="form-label">Activité:</label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="randonnee"
-                        value="Randonnée"
-                        aria-describedby="randonneeReservation"
-                      />
-                    </div>
-                    <div class="mb-3">
-                      <label class="form-label">Date:</label>
-                      <input
-                        type="date"
-                        class="form-control"
-                        id="randonneeDateReservation"
-                        aria-describedby="randonneeDateReservation"
-                      />
-                    </div>
-                    <div class="mb-3">
-                      <label class="form-label">Heure de début:</label>
-                      <input
-                        type="time"
-                        step="1"
-                        class="form-control"
-                        id="randonneeHeureDeDebut"
-                        aria-describedby="randonneeHeuredeDebutReservation"
-                      />
-                    </div>
-                    <div class="mb-3">
-                      <label class="form-label">Heure de fin:</label>
-                      <input
-                        type="time"
-                        step="1"
-                        class="form-control"
-                        id="randonneeHeureDeFin"
-                        aria-describedby="randonneeHeureDeFinReservation"
-                      />
-                    </div>
-                    <button
-                      type="button"
-                      onclick="addRandonneeReservation(); window.location.reload(true);"
-                      class="btn btn-primary"
-                    >
-                      Réserver
-                    </button>
-                  </form>
-                </div>
-              </div>
-            </div>
           </div>
           <div class="col-md-4 mt-4 mb-4">
             <h3 class="textcolor arvoregular mt-3">Sortie en plongée</h3>
@@ -494,89 +317,11 @@
               La plongée sous-marine, l'occasion parfaite de se déconnecter du
               monde.
             </p>
-            <button
-              class="btn btn-involved"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapsePlongée"
-              aria-expanded="false"
-              aria-controls="collapsePlongée"
-            >
-              Réserver mon activité
-            </button>
-            <div class="collapse" id="collapsePlongée">
-              <div class="card card-body colortheme">
-                <div class="container">
-                  <form>
-                    <div class="container">
-                      <div class="row">
-                        <div class="col-md-9">
-                          <input type="checkbox" id="ageplonge" >
-                          <label for="scales">Vous-avez plus de 12 ans ?</label>
-                        </div>
-                        
-                        <div class="col-md-3">
-                            <i class="fas fa-info-circle " data-bs-toggle="tooltip" data-bs-placement="right" title="Interdit au moins de 12 ans"></i>
-                        </div>
-                      </div>
-                    </div>
-                    
-                    <div class="mt-3 mb-3">
-                      <label class="form-label">Activité:</label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="plongee"
-                        value="Plongée"
-                        aria-describedby="dejeunerReservation"
-                      />
-                    </div>
-                    <div class="mb-3">
-                      <label class="form-label">Date:</label>
-                      <input
-                        type="date"
-                        class="form-control"
-                        id="plongeeDateReservation"
-                        aria-describedby="dejeunerDateReservation"
-                      />
-                    </div>
-                    <div class="mb-3">
-                      <label class="form-label">Heure de début:</label>
-                      <input
-                        type="time"
-                        step="1"
-                        class="form-control"
-                        id="plongeeHeureDeDebut"
-                        aria-describedby="dejeunerHeureDeDébutReservation"
-                      />
-                    </div>
-                    <div class="mb-3">
-                      <label class="form-label">Heure de fin:</label>
-                      <input
-                        type="time"
-                        step="1"
-                        class="form-control"
-                        id="plongeeHeureDeFin"
-                        aria-describedby="dejeunerHeureDeFinReservation"
-                      />
-                    </div>
-                    <button
-                    id="young"
-                      type="button"
-                      onclick="addPlongeeReservation(); window.location.reload(true);"
-                      class="btn btn-primary disabled"
-                    >
-                      Réserver
-                    </button>
-                  </form>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
         <div class="container">
-        <div class="row" id="reservationlist">
-          <div class="col-md-4"></div>
+          <div class="row">
+            <div class="col-md-4"></div>
             <div class="col-md-4 text-center">
               <button
                 class="btn btn-involved"
@@ -585,35 +330,26 @@
                 data-bs-target="#collapseActivity"
                 aria-expanded="false"
                 aria-controls="collapseActivity"
-                
                 id="jemangeunepomme"
               >
-                Réserver mon acitivité
+                Réserver mon activité
               </button>
               <div class="collapse" id="collapseActivity">
                 <div class="card card-body colortheme">
                   <div class="container">
                     <form>
-                      <div class="container" id="tohide">
-                        <div class="row">
-                          <div class="col-md-9">
-                            <input type="checkbox" id="ageactivite" >
-                            <label for="scales">Vous-avez plus de 12 ans ?</label>
-                          </div>
-                          
-                          <div class="col-md-3">
-                              <i class="fas fa-info-circle " data-bs-toggle="tooltip" data-bs-placement="right" title="Interdit au moins de 12 ans"></i>
-                          </div>
-                        </div>
-                      </div>
                       <div class="mb-3">
                         <label class="form-label">Activité:</label>
                         <select
                           type="text"
                           class="form-control"
-                          id="selactivity"
+                          id="activite"
                           aria-describedby="ActivityReservation"
-                        ></select>
+                        >
+                          <option value="Kanoé">Kanoé</option>
+                          <option value="Randonnée">Randonnée</option>
+                          <option value="Plongée">Plongée</option>
+                        </select>
                       </div>
                       <div class="mb-3">
                         <label class="form-label">Date:</label>
@@ -621,7 +357,6 @@
                           type="date"
                           class="form-control"
                           id="ActivityDateReservation"
-                          aria-describedby="ActivityDateReservation"
                         />
                       </div>
                       <div class="mb-3">
@@ -631,7 +366,6 @@
                           step="1"
                           class="form-control"
                           id="ActivityHeureDeDebut"
-                          aria-describedby="ActivityHeureDeDebutReservation"
                         />
                       </div>
                       <div class="mb-3">
@@ -641,13 +375,12 @@
                           step="1"
                           class="form-control"
                           id="ActivityHeureDeFin"
-                          aria-describedby="ActivityHeureDeFinReservation"
                         />
                       </div>
                       <button
-                        id ="youngac"
+                        id="youngac"
                         type="button"
-                        onclick="addActivityReservation(); window.location.reload(true);"
+                        onclick="reserverActivite(); window.location.reload()"
                         class="btn btn-primary"
                       >
                         Réserver
@@ -659,8 +392,52 @@
             </div>
             <div class="col-md-4"></div>
           </div>
-        </div><div class="col-md-4">
-          <a href="indextable.html" target="_blank">Voir les réservations</a>
+        </div>
+        <div class="col-md-4">
+          <p class="d-inline-flex gap-1">
+            <button
+              class="btn btn-primary"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseExample"
+              aria-expanded="false"
+              aria-controls="collapseExample"
+            >
+              Voir les réservations
+            </button>
+          </p>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <h3>Les reservations activités</h3>
+                    <div class="table-wrapper-scroll-y my-custom-scrollbar">
+                      <button
+                        class="btn btn-involved"
+                        type="button"
+                        onclick="getResaActivite()"
+                      >
+                        Afficher
+                      </button>
+                      <table
+                        class="table table-bordered table-striped mb-0"
+                        id="TableResaActivite"
+                      >
+                        <tr>
+                          <th>Activité</th>
+                          <th>Date</th>
+                          <th>Heure Début</th>
+                          <th>Heure Fin</th>
+                          <th>Supprimer</th>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -751,30 +528,6 @@
                 </div>
               </div>
             </div>
-            <!--
-            <button
-              type="button"
-              onclick="getbungalow()"
-              class="btn btn-primary"
-            >
-              GET
-            </button>
-            <div>
-              <div class="table-wrapper-scroll-y my-custom-scrollbar">
-                <table
-                  class="table table-bordered table-striped mb-0"
-                  id="bungalowmodal"
-                >
-                  <tr>
-                    <th>id</th>
-                    <th>Type</th>
-                    <th>Lanscape</th>
-                    <th>Get</th>
-                  </tr>
-                </table>
-              </div>
-            </div>
-            -->
           </div>
           <div class="col-md-6 mt-4 mb-4">
             <h3 class="textcolor arvoregular mt-3">Chambre</h3>
@@ -894,12 +647,13 @@
               </li>
             </ul>
           </div>
-          <div class="col-md-4 mt-4"><a href ="#home">
-            <img
-              id="contact"
-              class="rounded mx-auto d-block logo"
-              src="./assets/gitePim-removebg-preview.png"
-              alt="Logo du Gite"
+          <div class="col-md-4 mt-4">
+            <a href="#home">
+              <img
+                id="contact"
+                class="rounded mx-auto d-block logo"
+                src="./assets/gitePim-removebg-preview.png"
+                alt="Logo du Gite"
             /></a>
           </div>
           <div class="col-md-4 d-flex justify-content-end align-items-start">
